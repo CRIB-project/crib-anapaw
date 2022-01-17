@@ -1,0 +1,12 @@
+      INTEGER mlinemax,mrowmax,maxorder
+      PARAMETER (mlinemax=100,mrowmax=5,maxorder=3)
+
+      INTEGER nmatrix
+      REAL    matrix(mlinemax,mrowmax,maxmat)
+      INTEGER mline(maxmat),morder(maxmat),iflag_reverse_or_not(maxmat)
+      INTEGER pmatrix(0:maxorder, 0:maxorder, 0:maxorder, 
+     &                0:maxorder, 0:maxorder, 0:maxorder, maxmat)
+      INTEGER matprm(4,maxmat)
+
+      COMMON/MATRIXCONF/nmatrix, matrix, mline, morder,
+     &               iflag_reverse_or_not, pmatrix, matprm

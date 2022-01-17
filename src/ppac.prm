@@ -1,0 +1,252 @@
+c Time-stamp: <2008-04-20 16:58:46 rips>
+c ======================================================
+c       Parameter File for PPACs
+c ======================================================
+c order: f3PPACa,f3PPACb,f2PPAC,MCP,MCP_VME
+c
+c PPAC parameter
+c FLAG
+1
+c
+c PPAC Offset Values[mm](X1-X2,Y1-Y2)
+0,0,0,0,
+0,0,0,0,
+0,0,0,0,
+0,0,0,0,
+0,0,0,0,
+c
+c Gain Factors [ns/ch]( X1,X2,Y1,Y2 )
+0.10000,0.10000, 0.10000, 0.10000,
+0.10000,0.10000, 0.10000, 0.10000,
+0.10000,0.10000, 0.10000, 0.10000,
+0.10000,0.10000, 0.10000, 0.10000,
+0.10000,0.10000, 0.10000, 0.10000,
+c0.05496,0.05496,0.05498,0.05452
+c0.05451,0.05470,0.05381,0.05457
+c0.05451,0.05470,0.05381,0.05457
+c0.04908,0.04905,0.04881,0.048718
+c0.04860,0.04860,0.04860,0.04860
+c
+c Flag
+1
+c Gain Factors [ns/ch] from time calib.
+c0.05444,0.05502, 0.05502, 0.04856, 0.04860
+0.10000,0.10000, 0.10000, 0.10000, 0.10000
+c
+c TDC Offset [ns]
+0., 0.,0., 0.,0.
+c
+c Xcal(ns) -> X (mm) , Ycal(ns) -> Y (mm)
+c !Input (mm/ns)/2 from Kumagai-san parameter!
+c
+c F3 PPACa,b Oct.9, 2004 / F3 PPACa, F2 PPAC
+c DL-PPAC #8 0.6205, 0.6165
+c new PPAC in 2010... #9 and #10
+c #9 installed in Nov, 2010.
+c DL-PPAC #9/#10 1.257/2=0.6285, 1.257/2=0.6285
+c old PPACa #? 0.6200, 0.6210
+c Na21+p exp
+c PPACa...X:1.241/2=0.6205 Y:1.233/2=0.6165
+c offset  X:0.17 ns Y:0.11ns #8
+c PPACb...X:1.256/2=0.628 Y:1.256/2=0.628
+c offset  X: 0.29 mm Y: 0.18mm
+c
+c May 2014   PPACa...#8, PPACb...#9
+c
+c May 2015 ...  PPACa #8, PPACb #9 (??)
+c
+c
+c
+c
+c################################Now, Using##################################
+c F2 PPAC #8 on Apr. 2019.
+c F3 PPACa is #7, PPACb is #2 in Apr. 2019.
+c F3 PPACa is #3, PPACb is #2 in May 2019.
+c F3 PPACa is #3, PPACb is #9? in Mar 2021.
+c #3 1.264 mm/ns, 1.253 mm/ns, 0.22 mm, 0.30 mm
+c #2 1.256 mm/ns, 1.256 mm/ns, 0.29 mm, 0.18 mm
+c #7 1.240 mm/ns, 1.242 mm/ns, 0.92 ns, 1.58 ns
+c #8 1.241 mm/ns, 1.233 mm/ns, 0.17 ns, 0.11 ns
+c #9/10 1.257 mm/ns, 1.257 mm/ns, X:0.05mm, Y:0.04mm
+0.6320, 0.6270
+0.6280,	0.6280
+0.6205, 0.6165
+0.6500, 0.6500
+0.6000, 0.6000
+c#############################################################################x
+c
+c
+c
+c daid moved 23 May 2015 23:44:10
+c (was for PPACa), but exp file copied was be10, but this is b8_pb case 
+c0.6285, 0.6285  
+c
+c0.61, 0.615  
+c0.6205, 0.6165  
+c0.5719, 0.5984
+c0.6172, 0.6694
+c0.6000, 0.6000
+c0.6000, 0.6666
+c1.3700, 1.3700
+c
+c Z distance of each layers in meter.
+c
+c PPAC_A,PPAC_B,F2 PPAC(dummy), MCP, MCP_VME,Target,S0.92, 0.03, 0.03,SD
+c -> ?,PPAC_A,PPAC_B,F2 PPAC(dummy), Target,SSD
+c
+c-0.6905, -0.1835, 0.0, -0.1835, 0.0, 0.0
+c-0.710, -0.295, 0.0, -0.275, -0.275, 0.0, 0.219
+c2010/6/20 (m)
+c-0.655, -0.145, -0.0, 0.0, 0.0, 0.00.92, 0.03, 0.03,
+c2011/1/11 (m) 
+c0.0,-0.5765, -0.225, -0.0, 0.0, 0.0
+c 22Na(a,p) 2011.10.15 bayashi
+c-0.695,-0.415, -0.225, -0.0, 0.0, 0.0
+c 22Mg(alpha,p) 2011.10.12 daid
+c PPACa to PPACb is 280mm, but how about PPACb to target?
+c0.0, 0.3515, 0.0, 0.0, 0.5765, 0.0
+c22Na+p, alpha 2012/2/28
+c.0,0.2765, 0.597, -0.0, 0.0, 0.597
+c 16N, 2013/9/2
+c0., 0., 0.2765, 0., 0.597, 0.597
+c 10Be + alpha 2015/5
+c below is wrong?  ~daid
+c-0.6725, -0.3730, 0., 0., 0., 0.
+c 18F+d, no precise measurement yet
+c0.,0.,0.500, 0.,0.8000, 0.8140
+c 26Al + p 01 Mar 2017 16:32:42 
+c0.,-0.454,0.,0.0,.287,0.515
+c---------------------------
+c 8Li(a,n) Sep 2018
+c N/A, PPACa, PPACb, N/A, N/A, Target
+c0.,0.,0.2505,0.,0.,0.7236
+c 17N, 16N sep 2018
+c0.,0.,0.2505,0.,0.,0.6436
+c8B+120Sn, April 2019
+0.,0.,0.219,0.,0.,0.599
+c---------------------------
+c iflag_position_offset
+1
+c -------------------------------------------
+c  PPAC offset for X[ns] inside of delay line PPAC
+c ------------------------------------------
+c f3PPACa,f3PPACb,f2PPAC,MCP
+c  Mar, 2007  old PPACa=1.58
+c  NOv 2010 PPAC #9
+c 2010.9 PPACa
+c0.92, 0.04, 0.22, 0.00, 0.00
+c0.04, 0.23, 0.17, 0.00, 0.00
+0.92, 0.29, 0.17, 0.00, 0.00
+c -------------------------------------------
+c  PPAC offset for Y[ns] inside of delay line PPAC
+c -------------------------------------------
+c f3PPACa,f3PPACb,f2PPAC,MCP
+c  Mar, 2007 old PPACa=0.92
+c PPACa from 2010.9
+c1.58, 0.03,0.11,0.00,0.00
+c0.03, 0.14, 0.11,0.00,0.00
+1.58, 0.18, 0.11, 0.00, 0.00
+c
+c iflag_position_offset_line
+1
+c ------------------------------------------------
+c  PPAC line offset for X[ns] for delay line PPAC
+c ------------------------------------------------
+c f3PPACa,f3PPACb,f2PPAC,MCP
+c0.0, -4.3, 0.759,0.0,0.0
+0.0, -0.8296, 0.759,0.0,0.0
+c0.0, -0.8296, 0.759,-21.5,0.0
+c0.0, -0.8296, 0.759,-11.0,0.0
+c2850, -0.82285 0.759,-19.0,0.0
+c0.0, -0.8296, 0.759, 0.0
+c
+c ------------------------------------------------
+c  PPAC line offset for Y[ns] for delay line PPAC
+c ------------------------------------------------
+c f3PPACa,f3PPACb,f2PPAC,MCP
+-0.22, -1.0, -2.28,1.63,0.00
+c-0.22, -2.367,-2.28,1.63,0.00
+c-0.22, -2.367,-2.28,0.0,0.00
+c-0.22, -2.367,-2.28,-11.39,0.00
+c-0.22, -2.367,-2.28,0.00,0.00
+c-0.22, -2.367,-2.28,-3.00
+c MCP Y inverted
+c-0.22, -2.367,-2.28,3.00
+c
+c iflag_geom_position_offset 2*(X,Y[mm])
+1
+c for F3 PPACa,b, F2PPAC, MCP5
+c F2 PPAC y is 1.5 mm higher than the beam line (apr2017)
+c Apr 2019, ppaca 1.2 mm higher than the beam, 0.5mm to the beam right
+C Apr 2019, ppacb 7.0 mm lower than the beam
+C Apr 3, 2019, ppacb -> lifted by 2.5mm (4.5 mm)
+C Apr 6, 2019, ppacb -> down by 3.0mm (7.5 mm)
+C Apr 6, 2019, ppacb -> down by 1.5mm (6.0 mm)
+C Apr 8, 2019, ppacb -> down by 2 mm (.0 mm)
+-0.5, 2.8,
+0.0, -0.5,
+0.0, -0.0,
+0.0, 0.0,
+0.0, 0.0
+c0.50,21.0,
+c0.0, -3.0,
+c6.1, -3.6,
+c0.0, 0.0,
+c0.0, 0.0
+c0.0, 3.0,
+c6.1, 0.7,
+c0.0, 0.0,
+c0.0, 0.0
+c
+c-0.82, -0.74,
+c
+c iflag_cath_position_offset 2*(X,Y[mm])
+0
+0.0, 0.0,
+0.0, 0.0,
+0.0, 0.0,
+0.0, 0.0,
+0.0, 0.0
+c
+c iflag_reverse_axis 2*(X,Y) 
+1
+c -1.0rom   1052 to   3456
+c  Mean Value          :    2418.67
+c -> reverse / 1.0 -> not reverse
+cF3PPACb , F3PPACa / F3PPACb , F2PPAC
+1.0, 1.0,
+1.0, 1.0,
+1.0, 1.0,
+1.0, -1.0,
+1.0, 1.0
+c
+c <Tx>-Ta T0-calib
+0
+c
+37.2, 35.7,
+-1.10, -3.21
+38.5, 39.9,
+40.0, 40.0,
+40.0, 40.0
+c
+c38.5, 39.9,
+c40.0, 40.0,
+c
+cc For MCP calibration with cubic functions
+c X
+-2.3184e+00,1.0312e+00,8.2764e-02,1.4632e-03,4.0064e-03,-2.0998e-03,5.2540e-04,-2.5434e-04,-8.7533e-05,9.1147e-04
+c Y
+-2.3414e+00,-1.5851e-01,1.4031e+00,-1.7560e-03,3.0646e-03,-3.1187e-04,4.8785e-04,-8.9080e-04,2.1046e-04,8.1484e-04
+c
+c ======================================================
+c       End of File
+c ======================================================
+
+
+
+
+
+
+
+
+285

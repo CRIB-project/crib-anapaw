@@ -1,0 +1,14 @@
+      integer blksize
+      parameter(blksize=2000)
+      Integer*2      EvtData(blksize)
+      Integer        RNum, evtnw
+      Common/ANALYSEVENT/ EvtData,RNum, evtnw
+
+      integer maxsegid
+      parameter(maxsegid=50)
+      integer segid(maxsegid)
+      integer addr(maxsegid)
+      integer nw(maxsegid)
+      common/analyssegment/segid, addr, nw
+      
+      

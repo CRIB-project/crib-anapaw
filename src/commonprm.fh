@@ -1,0 +1,4 @@
+      LOGICAL ihitflag
+      INTEGER block_clock
+      COMMON/COMMONPRM/ ihitflag,block_clock
+

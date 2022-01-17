@@ -1,0 +1,23 @@
+#
+# Z-position (mm) of tracking image from modified focus point. 
+#
+# Maximum is 8.
+#
+# ifocus, zposition from focus ,+: downstream, -: upstream
+# F8 Sunday Setting
+ 8,  -1440.5
+ 8,   -940.5
+ 8,   -148.5
+ 8,      0.0
+ 8,    875.5
+11,   -432.0
+11,      0.0
+11,      0.0
+#
+# Configuration for Sunday Exp. ( 10.Nov.2010  M.Matsushita )
+# F8  PPAC-1     -1440.5 mm
+# F8  PPAC-2      -940.5 mm
+# F8  ST-Focus    -148.5 mm
+# F8  Target         0.0 mm
+# F8  PPAC-3       875.5 mm
+# F11 Plastic     -432.0 mm ??? data from Must2 Prameter file

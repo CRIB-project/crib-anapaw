@@ -1,0 +1,22 @@
+      REAL   flpla(6,0:nfocus)
+      REAL   flfocus(0:nfocus)
+
+      COMMON/FLDATA/ flpla,flfocus
+
+c
+c flpla(i,j) : tof counter position from standard focus in mm.
+c
+c i = nfpdata   1-6 : data number
+c                 1 : 1st plastic
+c                 2 : 2nd plastic
+c                 3 : 3rd plastic
+c                 4 : 4th plastic
+c                 5 : ppac anode 
+c                 6 : Total-E 
+c
+c j = nfocus        : focal plane id (0 is F0)
+c
+
+c
+c flfocus(nfocus) : distance between focus and F0 in mm.
+c

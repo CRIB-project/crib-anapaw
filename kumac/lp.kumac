@@ -1,0 +1,16 @@
+macro lp
+opt stat
+opt logz
+lny
+size 15 15
+zone 2 2 
+ht 111 cont ; ht 112 cont ;
+ht 113 cont ; ht 114 cont ;
+xstat
+wait
+lp
+zone 2 3 
+ht 152 cont ; ht 153 cont ;
+ht 154 cont ; ht 155 cont ;
+ht 156 cont ; ht 157 cont ;
+lp

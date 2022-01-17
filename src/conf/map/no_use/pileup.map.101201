@@ -1,0 +1,12 @@
+# CatID, ID, Device, Focus, Detector, GEO, Channel ; comments
+20,  1, 0 63 12 6  2 ; PileUP for F3Pl-L
+20,  2, 0 63 12 6  3 ; PileUP for F3Pl-R
+20,  3, 0 63 12 6  4 ; PileUP for F7Pl-L
+20,  4, 0 63 12 6  5 ; PileUP for F7Pl-R
+20,  5, 0 63 12 6  6 ; (PileUP for F5Pl-L)
+20,  6, 0 63 12 6  7 ; (PileUP for F5Pl-R)
+20,  7, 0 63 12 6  8 ; PileUP for F8Pl-L
+20,  8, 0 63 12 6  9 ; PileUP for F8Pl-R
+20,  9, 0 63 12 6 10 ; PileUP for F11Pl-L
+20, 10, 0 63 12 6 11 ; PileUP for F11Pl-R
+

@@ -1,0 +1,4 @@
+      INTEGER   nicch
+      PARAMETER (nicch=6)
+      REAL      ch2mev(3,nic)
+      COMMON/ICPRM/ch2mev

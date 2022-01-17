@@ -1,0 +1,37 @@
+c
+c Brho values (Tm) : Brho35, Brho57, Brho89, Brho1011
+c
+c Experiment values with C target
+5.9468
+5.9429
+4.9948
+4.9885
+c LISE++ values
+c5.9389
+c5.9354
+c4.9855
+c4.9806
+c
+c # of dispersive focus
+c
+2
+c
+c Focus, Dispersion (mm/%)
+c
+5,  31.6
+10, 24.8
+c
+c # of matrices to be calculated
+c
+5, 
+c
+c Matrix ID   (see src/conf/matrix.conf)
+c
+1,2,6,7,9
+c
+c iflag_highorder
+c 	1 : Reconstruction using high order matrix
+c       0 : Reconstruction NOT using high order matrix
+0
+c
+c 

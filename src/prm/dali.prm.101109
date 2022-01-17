@@ -1,0 +1,34 @@
+#
+# Parameters for DALI2 in SHARAQ experiments (2010).
+#
+# 2010/08/25 S.TAKEUCHI
+#
+c DALI_ped
+'src/prm/dali/ped.prm'
+c
+c DALI_gain
+'src/prm/dali/gain.prm'
+c
+c DALI_Tcal
+'src/prm/dali/tcal.prm'
+c
+c DALI_Toff
+'src/prm/dali/toff.prm'
+c
+c Theta of each crystal
+'src/prm/dali/theta.prm'
+c
+c Beta and Gamma of the beam [Gamma = 1./sqrt(1.-Beta^2)]
+# sample
+c0.500, 1.155
+# 10C beam 2010/10/03
+0.5571, 1.2042
+c
+c Timing range for 'TRUE'
+# sample
+c-10., 10.
+-1600.,-1250.
+c
+c Conversion parameters from ID to Layer
+'src/prm/dali/id2layer.prm'
+c

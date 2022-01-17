@@ -1,0 +1,51 @@
+
+      INTEGER nfpdata,ndatatype
+      PARAMETER (nfpdata = 6, ndatatype = 5)
+
+      REAL    fpdata(nfpdata,ndatatype,0:nfocus)
+      LOGICAL lfpdata(0:nfpdata,ndatatype,0:nfocus)
+
+      COMMON/FOCALPLANEDATA/fpdata,lfpdata
+
+c
+c fpdata(i,j,k) : data for focal plane
+c
+c i = nfpdata   1-6 : data number
+c j = ndatatype 1-5 : data type
+c k = nfocus        : focal plane id (For RF, k = 0 (F0).)
+c
+c j = 1 : position
+c	i = 1 : x
+c           2 : y
+c           3 : a
+c           4 : b
+c           5 : x from 1st plastic
+c           6 : x from 2nd plastic
+c
+c j = 2 : time
+c       i = 1 : 1st plastic (or RF1 if k=0)
+c           2 : 2nd plastic (or RF2 if k=0)
+c           3 : 3rd plastic (temp)
+c           4 : 4th plastic (temp)
+c           5 : ppac anode time
+c           6 : total-e time
+c
+c j = 3 : dE
+c       i = 1 : I.C.
+c           2 : SSD
+c           3 : other : 1st plastic
+c           4 : other : 2nd plastic
+c
+c j = 4 : E
+c       i = 1 : NaI(Tl)
+c           2 : LaBr3
+c           3 : other
+c j = 5 : Other
+c
+c lfpdata(i,j,k)
+c i = nfpdata   0-6 : data number, 0 is for all data.
+c j = ndatatype 1-5 : data type
+c k = nfocus        : focal plane id (For RF, k = 0 (F0).)
+c
+c Definitions of j and i are same as fpdata.
+c

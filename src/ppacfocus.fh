@@ -1,0 +1,6 @@
+      REAL    resx(nfocus), resy(nfocus)
+      REAL    ppacxyzt(10,5,nfocus)
+      INTEGER epmaxnp(nfocus)
+
+      COMMON/PPACFOCUS/resx, resy, ppacxyzt, epmaxnp
+

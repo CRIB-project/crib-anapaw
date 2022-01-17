@@ -1,0 +1,5 @@
+#c map for ssd ppac
+#c [category] [id] [[device] [seg_detid1] [seg_detid2] [module] [ch]] ....
+3,	1,	12 0  6  1 1, 12 0 7 11 22 ; SSD   1
+3,	2,	12 0  6  1 2, 12 0 7 11 23 ; SSD   2
+3,	3,	12 0  6  1 3, 12 0 7 11 24 ; SSD   3

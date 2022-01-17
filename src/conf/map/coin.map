@@ -1,0 +1,5 @@
+# Map for coin
+# Note: automatically produced with mapmaker.pl. Do not edit it directly
+3, 1, 12 0  7  11  13, ; coin Single 
+3, 2, 12 0  7  11  14, ; coin Coin 
+3, 3, 12 0  7  11  15, ; coin Pileup 

@@ -1,0 +1,4 @@
+# map for beamline IC
+# [category] [id] [[seg_detid1] [seg_detid2] [ch]] ....
+# Map A0 A1 A2 A3 A4 T0
+16, 1,  1 11 18 0 0, 1 11 18 0 1, 1 11 18 0 2, 1 11 18 0 3, 1 11 18 0 4, 1 11 19 0 0 ; LaBr

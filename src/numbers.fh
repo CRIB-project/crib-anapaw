@@ -1,0 +1,21 @@
+      INTEGER npla
+      PARAMETER (npla = 8)
+
+      INTEGER nppac, nfocus
+      PARAMETER (nppac = 34, nfocus = 11)
+
+      INTEGER ngppac, ngfocus
+      PARAMETER (ngppac = 2, ngfocus = 1)
+
+      INTEGER nic
+      PARAMETER (nic = 4)
+
+      INTEGER maxmat
+      PARAMETER (maxmat = 20)
+
+      INTEGER nlayer
+      PARAMETER (nlayer = 8)
+
+      INTEGER ntotale
+      PARAMETER (ntotale = 2)
+

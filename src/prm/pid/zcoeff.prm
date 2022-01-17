@@ -1,0 +1,27 @@
+c
+c Parameter sets for Z calibrations of dE detectors. (up to 10 sets)
+c 15.Nov.2010 Update for 40Si->38Mg Exp. by Matsushita
+c Old F7IC Zcoef  :  11,234 ,  0.0622
+c Old F11IC Zcoef  :  9.6755, -0.0736
+c FID,	DetType,	Zcoeff1,	Zcoeff2,	ionpair
+    3,        3,          4.423,     -1.163E-01,        15796.0,
+    7,	      1,	 11.234,        -0.0123,	 4866.0,
+    7,        3,         11.234,        -0.4357,	 4866.0,
+   11,	      1,	  9.6755,       -0.1736,	 4866.0,
+   11,        3,          4.815,         -0.758,        15796.0,
+   11,        4,          4.815,         -0.758,        15796.0,
+c
+c  Old val 2010.11.25. Matsushita
+c   11,	      1,	  9.6755,       -0.4036,	 4866.0,
+c FocusID, Detector Type,  Zcoeff1,  Zcoeff2, ionpair
+c
+c Detector Type : 1 = I.C.
+c                 2 = SSD
+c                 3 = Others (1st plastic)
+c                 4 = Others (2nd plastic)
+c
+c Ionpair 5930.0 for SSD
+c         4866.0 for I.C. 2mc2/I, I=210eV (Ar)
+c          172.0 for I.C. ?
+c	 15796.0 for Plastic  2mc2/I,  I=64.7eV (BC-400)
+c

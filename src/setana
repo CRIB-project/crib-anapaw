@@ -1,0 +1,74 @@
+#!/bin/csh -f
+
+if ( $1 == 'anapaw' ) then
+#setenv IC_PRM         $USER_SOURCE/prm/ic.prm
+#setenv IMAGE_PRM      $USER_SOURCE/prm/image.prm
+#setenv MATRIX_PRM     $USER_SOURCE/prm/matrix.prm
+#setenv PID_PRM        $USER_SOURCE/prm/pid.prm
+#setenv PLA_PRM        $USER_SOURCE/prm/pla.prm
+setenv PPAC_PRM       $USER_SOURCE/ppac.prm
+#setenv RF_PRM         $USER_SOURCE/prm/rf.prm
+setenv DSSD_PRM        $USER_SOURCE/dssd.prm
+setenv MSSD_PRM        $USER_SOURCE/mssd.prm
+setenv SSD_PRM        $USER_SOURCE/ssd.prm
+#setenv TOTALE_PRM     $USER_SOURCE/prm/totale.prm
+#setenv DALI_PRM       $USER_SOURCE/prm/dali.prm  
+#setenv GPPAC_PRM      $USER_SOURCE/prm/gppac.prm
+		      
+setenv ART_MAPCONFIG  $USER_SOURCE/conf/mapper.conf
+#setenv MATRIX_CONFIG  $USER_SOURCE/conf/matrix.conf
+#setenv PLASTIC_CONFIG $USER_SOURCE/conf/plastic.conf
+setenv PPAC_CONFIG    $USER_SOURCE/conf/ppac.conf
+setenv GPPAC_CONFIG   $USER_SOURCE/conf/gppac.conf
+
+setenv ANAPAW_STATCOM $HOME/epics/xmldipole.sh
+
+setenv IHIT_MIN0 2
+
+echo ' '
+
+else if ($1 == 'chkenv') then
+
+echo ' '
+echo ' Local Environments are defined for ANAPAW.'
+echo ' '
+echo ' ANAPAW_USER    =' $ANAPAW_USER
+echo ' CERNLIB        =' $CERNLIB
+echo ' ANAPAW_HOME    =' $ANAPAW_HOME
+echo ' ANAPAW_LIB     =' $ANAPAW_LIB
+echo ' ANAPAW_SOURCE  =' $ANAPAW_SOURCE
+echo ' ANAPAW_MACROS  =' $ANAPAW_MACROS
+echo ' ANALOGON       =' $ANALOGON
+echo ' USER_SOURCE    =' $USER_SOURCE
+echo ' '
+#echo ' IC_PRM         =' $IC_PRM         
+#echo ' IMAGE_PRM      =' $IMAGE_PRM      
+#echo ' MATRIX_PRM     =' $MATRIX_PRM     
+#echo ' PID_PRM        =' $PID_PRM        
+#echo ' PLA_PRM        =' $PLA_PRM        
+echo ' PPAC_PRM       =' $PPAC_PRM       
+#echo ' RF_PRM         =' $RF_PRM         
+echo ' DSSD_PRM       =' $DSSD_PRM        
+echo ' MSSD_PRM       =' $MSSD_PRM        
+echo ' SSD_PRM        =' $SSD_PRM        
+#echo ' TOTALE_PRM     =' $TOTALE_PRM     
+#echo ' DALI_PRM       =' $DALI_PRM       
+#echo ' GPPAC_PRM      =' $GPPAC_PRM       
+echo ' '
+echo ' ART_MAPCONFIG  =' $ART_MAPCONFIG  
+#echo ' MATRIX_CONFIG  =' $MATRIX_CONFIG  
+#echo ' PLASTIC_CONFIG =' $PLASTIC_CONFIG 
+echo ' PPAC_CONFIG    =' $PPAC_CONFIG    
+#echo ' GPPAC_CONFIG   =' $GPPAC_CONFIG    
+echo ' '
+echo ' ANAPAW_STATCOM =' $ANAPAW_STATCOM
+echo ' '
+
+else if ( ($1 == 'ihitmin' || $1 == 'ihitmin0') && $2 !="") then
+
+    setenv IHIT_MIN0 $2
+    echo 'IHIT_MIN0 =' $IHIT_MIN0
+
+endif
+
+#${HOME}/bin/listanapaw

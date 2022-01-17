@@ -1,0 +1,23 @@
+#
+# Z-position (mm) of tracking image from modified focus point. 
+#
+# Maximum is 8.
+#
+# ifocus, zposition from focus ,+: downstream, -: upstream
+ 8,-1025.
+ 8, -512.
+ 8,  885.
+11,  -75.
+11,  722.
+ 5, -100.
+ 5, -150.
+ 5, -200.
+#
+# F8  Target        16 mm
+# F8  PPAC-1     -1509 mm
+# F8  PPAC-2     -1009 mm
+# F8  PPAC-3      -496 mm
+# F8  PPAC-4       871 mm
+# F11 IC entrance  -75 mm
+# F11 Plastic      722 mm
+# F11 LaBr3        750 mm

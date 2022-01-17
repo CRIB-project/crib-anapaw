@@ -1,0 +1,37 @@
+c ======================================================
+c       Parameter File for PPAC's
+c ======================================================
+c
+c ch2ns
+'src/prm/gammappac/ppactcal.prm'
+c
+c iflag_inside_offset
+1
+c
+c distance between focus and f0, and dZpos
+c
+'src/conf/fl.conf'
+c
+c TXsumgate flag
+1
+c 
+'src/prm/gammappac/txsum.prm'
+c
+c TYsumgate flag
+1
+c
+'src/prm/gammappac/tysum.prm'
+c
+c iflag_outside_offset
+1
+c outoffset : line calib. offsets for X and Y (ns)
+c
+'src/prm/gammappac/outoffset.prm'
+c
+c iflag_geom_offset
+c
+1
+c
+c geomoffset (x,y) (mm) :  X(Y)-offset
+'src/prm/gammappac/geomoffset.prm'
+c

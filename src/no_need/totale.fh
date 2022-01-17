@@ -1,0 +1,5 @@
+
+      INTEGER teknd(ntotale),tefcs(ntotale)
+      REAL    ch2mev(2,ntotale),ch2ns(ntotale)
+      REAL    tepos(ntotale)
+      COMMON/TOTALEPRM/teknd, tefcs, ch2mev, ch2ns, tepos

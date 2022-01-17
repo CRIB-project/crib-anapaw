@@ -1,0 +1,8 @@
+      REAL    tof(nfocus,nfocus,3)
+      LOGICAL ltof(nfocus,nfocus,3)
+      REAL    betac(nfocus,nfocus,3)
+      REAL    fl(nfocus,nfocus,3)
+      REAL    de(4,nfocus)
+
+      COMMON/PIDDATA/ tof,ltof,betac,fl,de
+

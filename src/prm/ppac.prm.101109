@@ -1,0 +1,44 @@
+c ======================================================
+c       Parameter File for PPAC's
+c ======================================================
+c
+c ch2ns
+'src/prm/ppac/ppactcal.prm'
+c
+c q_ped
+'src/prm/ppac/ppacqped.prm'
+c
+c iflag_inside_offset
+1
+c
+c distance between focus and f0, and dZpos
+c
+'src/conf/fl.conf'
+c
+c TXsumgate flag
+1
+c 
+'src/prm/ppac/txsum.prm'
+c
+c TYsumgate flag
+1
+c
+'src/prm/ppac/tysum.prm'
+c
+c iflag_outside_offset
+1
+c outoffset : line calib. offsets for X and Y (ns)
+c
+'src/prm/ppac/outoffset.prm'
+c
+c iflag_geom_offset
+c
+1
+c
+c geomoffset (x,y) (mm) :  X(Y)-offset
+'src/prm/ppac/geomoffset.prm'
+c
+c Z position (mm) of tracking image from focus point. Maximum is 8.
+c 
+'src/prm/ppac/trackzpos.prm'
+c

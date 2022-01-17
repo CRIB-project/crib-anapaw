@@ -1,0 +1,33 @@
+c
+c Brho file
+c
+'src/prm/brho.prm'
+c
+c # of dispersive focus
+c
+2
+c
+c Focus, Dispersion (mm/%), (1 or 0 : UsePPAC=1, UsePlastic=0), order
+c  order : 1 or 2 when you chose plastic -> 0 for 3rd parameter.
+c          1 : 1st plastic
+c          2 : 2nd plastic
+c
+5,  31.6, 0, 2
+10, 24.8, 1, 1
+c9, -24.8, 1, 1
+c11, 40.0, 0, 2
+c
+c # of matrices to be calculated
+c
+6
+c
+c Matrix ID   (see src/conf/matrix.conf)
+c
+1,2,3,4,5,6
+c
+c iflag_highorder
+c 	1 : Reconstruction using high order matrix
+c       0 : Reconstruction NOT using high order matrix
+0
+c
+c 

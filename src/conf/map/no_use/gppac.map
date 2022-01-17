@@ -1,0 +1,7 @@
+# map for gamma ppac
+# [category] [id] [[device] [seg_detid1] [seg_detid2] [module] [ch]] ....
+#  VME A-Tx1 A-Ty1 A-Tx2 A-Ty2 B-Tx1 B-Ty1 B-Tx2 B-Ty2 A-TA  B-TA  ->
+#  Map A-Tx1 A-Ty1 A-Tx2 A-Ty2 A-TA  B-Tx1 B-Ty1 B-Tx2 B-Ty2 B-TA
+#  Q is not mesured. (dummy)
+13, 1, 20 8 1 4  0, 20 8 1 4  1, 20 8 1 4  2, 20 8 1 4  3, 20 8 1 4  8, 20 8 1 4 128, 20 8 1 4 129, 20 8 1 4 130, 20 8 1 4 131, 20 8 1 4 136 ; F8PPAC3A
+13, 2, 20 8 1 4  4, 20 8 1 4  5, 20 8 1 4  6, 20 8 1 4  7, 20 8 1 4  9, 20 8 1 4 132, 20 8 1 4 133, 20 8 1 4 134, 20 8 1 4 135, 20 8 1 4 137 ; F8PPAC3B

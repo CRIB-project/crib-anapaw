@@ -1,0 +1,12 @@
+
+      REAL    brhonmr(4)
+      INTEGER iddisfcs(maxmat)
+      REAL    dispersion(maxmat), dfcsbrho(maxmat)
+      INTEGER ndfcs, nmtrx, idmtrx(maxmat), iorder(maxmat)
+      INTEGER iflag_highorder
+      LOGICAL fuseppac(nfocus)
+
+      COMMON/MATRIXPRM/ brhonmr, iddisfcs, dispersion, dfcsbrho, 
+     &	                ndfcs, nmtrx, idmtrx, iorder,
+     &                  iflag_highorder, fuseppac
+

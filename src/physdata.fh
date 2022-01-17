@@ -1,0 +1,8 @@
+      real amu,clight
+      parameter(amu=931.49432,clight=299.792458)
+
+      real beta2gamma
+      real beta2brho
+      external beta2gamma
+      external beta2brho
+

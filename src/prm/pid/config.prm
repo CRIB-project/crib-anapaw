@@ -1,0 +1,65 @@
+#
+# Configuration file for calculations of Z and AoQ up to 20 sets.
+#
+#  Parameter set for Brho, dE, or Beta(TOF) should be consistent with 
+# parameters defined in matrix.prm, tof.prm, zcoeff.prm.
+#
+# ID 11 : Brho57_pos,   dE7(IC),  Beta57_NMR
+#    12 : Brho57_pos,   dE7(PL),  Beta57_NMR
+#    13 : Brho89_rec,  dE11(IC),  Beta811
+#    14 : Brho1011_pos,dE11(IC),  Beta811
+#    15 : Brho1011_pos,dE11(IC),  Beta911_NMR
+#    16 : Brho1011_pos,dE11(IC),  Beta1011_NMR
+#
+# W  1 : ID , 2 : Brho, 3 : Beta, 
+#    4 : Z (from dE, Beta), 5 : AoQ (from Brho, Beta)
+#
+#ID Brho        dE    Beta       Partner  TOF
+11,  5, 7,1,2,   7,1,  5, 7,1,2,  3, 5,1,  3, 7,1,
+12,  5, 7,1,2,   7,3,  5, 7,1,2,  3, 5,1,  3, 7,1,
+13,  8, 9,1,1,  11,1,  8,11,1,1,  0, 0,0,  0, 0,0,
+14, 10,11,1,2,  11,1,  8,11,1,1,  0, 0,0,  0, 0,0,
+15, 10,11,1,2,  11,1,  9,11,1,2,  8, 9,1,  8,11,1,
+16, 10,11,1,2,  11,1, 10,11,1,2,  8,10,1,  8,11,1,
+#
+# ID, Brho, dE, Beta, (Beta partner, TOF)
+#
+# ID     : ID number for val
+#
+# Brho   : 1st Focus ID, 2nd Focus ID, Order, Type
+#	 Type : 1 = Brho by reconstruction
+#               2 = Brho by position 
+#               3 = Brho (NMR)
+#
+# dE     : Focus ID, Detector Type
+#        Type : 1 = I.C.
+#               2 = SSD
+#               3 = Others : 1st plastic
+#               4 = Others : 2nd plastic
+#
+# Beta   : 1st Focus ID, 2nd Focus ID, Order, Type
+#        Type : 1 = from TOF
+#             : 2 = from TOF and Brho(NMR)
+#             : 3 = from TOF and Brho by reconstruction
+# 		   When F5 deg. is used, 2 and 3 are usefull.
+#
+# Partner ( If BetaType = 2 or 3 )
+#        : 1st Focus ID, 2nd Focus ID, Order
+#
+# TOF ( If BetaType = 2 or 3 )
+#        : 1st Focus ID, 2nd Focus ID, Order
+#
+#----EXAMPLES----
+# 
+# Brho(35)_REC = 3,5,1,1 (If Matrix(3,5) and PPAC-FX(5) are available)
+# Brho(35)_POS = 3,5,1,2 (If PPAC-FX(5) is available)
+# Brho(35)_NMR = 3,5,1,3
+#
+# dE-SSD@F3 =  3,2
+# dE-IC@F11 = 11,1
+# dE-Pla@F7 =  7,3
+#
+# Beta(37)_TOF = 3,7,1,1
+# Beta(35)_NMR = 3,5,1,2  -> Partner = 5,7,1, TOF = 3,7,1
+# Beta(811-2)_TOF (using F11plastic-2) = 8,11,2,1
+#

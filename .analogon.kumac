@@ -1,0 +1,21 @@
+defaults $ANAPAW_MACROS
+host_psview gv
+option fit
+option grid
+set fit 111
+set vsiz 0.25
+set tsiz 0.34
+set tfon -20
+set gfon -60
+set lfon -600
+set vfon -20
+set cfon -20
+set xlab 1.2
+set ylab 0.6
+set yhti 0.95
+graphics/viewing/size 18. 18.
+set ncol 28
+pal 1
+set htyp -3
+set hcol 1012
+exec ini_alias

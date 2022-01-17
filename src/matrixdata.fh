@@ -1,0 +1,17 @@
+
+      REAL    deltac(maxmat),brhoc(maxmat)
+      REAL    deltar(maxmat),brhor(maxmat)
+      REAL    angx(maxmat),angy(maxmat),dfl(maxmat)
+
+      COMMON/MATRIX/ deltac, brhoc, 
+     &               deltar, brhor, angx, angy, dfl
+
+      REAL    brhon(nfocus,nfocus)
+      REAL    rdelta(nfocus,nfocus,0:3),rbrho(nfocus,nfocus,0:3)
+      REAL    rangx(nfocus,nfocus,0:3),rangy(nfocus,nfocus,0:3)
+      REAL    rdfl(nfocus,nfocus,0:3)
+      LOGICAL lmatrix(nfocus,nfocus,0:3)
+
+      COMMON/MATRIXDATA/brhon,rdelta,rbrho,rangx,rangy,rdfl,lmatrix
+
+      

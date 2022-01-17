@@ -1,0 +1,77 @@
+      INTEGER ntof
+      REAL    tfk(5,20)
+      INTEGER nde,dek(2,10)
+      REAL    zcoeff(2,4,nfocus),ionpair(4,nfocus)
+      LOGICAL lfltof, lflcorrect
+      INTEGER nconfig,idcnf(20)
+      INTEGER brcnf(4,20),decnf(2,20),btcnf(4,20)
+      INTEGER btpcnf(3,20),tofcnf(3,20)
+
+      COMMON/PIDPRM/ntof,tfk,
+     &	            nde,dek,zcoeff,ionpair,
+     &	            lfltof,lflcorrect,
+     &	            nconfig,idcnf,brcnf,decnf,
+     &	            btcnf,btpcnf,tofcnf
+
+
+c-----------
+c tfk(i,j)
+c i=1 : Start Focus (StaF) : focus number of TOF start
+c i=2 : kind               : order defined in plastic.conf.
+c             tfk(2,j) = 1 : 1st plastic
+c                        2 : 2nd plastic
+c                        3 : 3rd plastic
+c                        4 : 4th plastic
+c                        5 : ppac ta
+c                        6 : Total E
+c i=3 : Stop Focus  (StoF) : focus number of TOF stop
+c i=4 : kind (same as i=2)
+c i=5 : TOF offset
+c j   : order of TOF set
+c
+c-----------
+c zcoeff(i,j,k)
+c i : order of coefficients
+c j : detector type. 1=I.C., 2=SSD, 3=others, 4=others
+c k : focus
+c
+c-----------
+c brcnf(i,j) : Brho
+c i : kind 1 = 1st Focus ID
+c          2 = 2nd Focus ID
+c          3 = Order
+c          4 = Type
+c  	       Type : 1 = Brho by reconstruction
+c                     2 = Brho by position 
+c                     3 = Brho (NMR)
+c
+c-----------
+c decnf(i,j) : dE
+c i : kind 1 = Focus ID
+c          2 = Detector Type
+c  	       Type : 1 = I.C.
+c                     2 = SSD
+c                     3 = Others
+c
+c-----------
+c btcnf(i,j) : Beta
+c i : kind 1 = 1st Focus ID
+c          2 = 2nd Focus ID
+c          3 = Order
+c          4 = Type
+c  	       Type : 1 = from TOF
+c                     2 = from TOF and Brho(NMR)
+c                     3 = from TOF and Brho by reconstruction
+c
+c----------- : Beta
+c btpcnf(i,j) *** If btcnf(4,i) = 2 or 3. ***
+c i : kind 1 = 1st Focus ID
+c          2 = 2nd Focus ID
+c          3 = Order
+c
+c----------- : TOF
+c tofcnf(i,j) *** If btcnf(4,i) = 2 or 3. ***
+c i : kind 1 = 1st Focus ID
+c     2 = 2nd Focus ID
+c          3 = Order
+c

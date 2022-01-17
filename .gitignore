@@ -1,0 +1,8 @@
+*.ps
+*.eps
+
+*.swp
+*~
+
+hbk/
+ridf/

@@ -1,0 +1,5 @@
+# Map for Total E counters
+# [category] [id] [Device] [seg_detid1] [seg_detid2] [module] [ch] ...
+#  ID       E              T   
+6, 1,  0, 7,11, 0, 0, 0, 7, 16, 0, 0, ; F7  NaI 
+6, 2,  1,11,11, 0, 0, 1,11, 16, 0, 0, ; F11 NaI 

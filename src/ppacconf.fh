@@ -1,0 +1,6 @@
+      INTEGER maxfcs,maxnp(nfocus)
+      INTEGER ppacid(10,nfocus),ppacfcs(2,nppac)
+      REAL    ppaczpos(2,nppac)
+
+      COMMON/PPACCONF/maxfcs,maxnp,ppacid,ppacfcs,ppaczpos
+

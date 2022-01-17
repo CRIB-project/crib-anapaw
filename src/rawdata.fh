@@ -1,0 +1,20 @@
+      integer maxrawdata, maxcat
+      parameter(maxrawdata=10000, maxcat=64)
+      integer rawdata(maxrawdata)
+      integer rawheadpos(maxcat)
+      integer nhitdet(maxcat)
+      integer hitdet(maxrawdata)
+      integer nhitdata(maxrawdata)
+      integer hitheadpos(maxcat)
+      integer ndet(maxcat)
+      integer ndata(maxcat)
+
+      common/anarawdata/
+     & rawdata,
+     & rawheadpos,
+     & nhitdet,
+     & hitdet,
+     & nhitdata,
+     & hitheadpos,
+     & ndet,
+     & ndata

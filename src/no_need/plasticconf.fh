@@ -1,0 +1,4 @@
+      REAL   tkind(3,npla)
+
+      COMMON/PLASTICCONF/tkind
+

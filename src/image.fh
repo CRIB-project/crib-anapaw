@@ -1,0 +1,3 @@
+      REAL    trackzpos(2,nlayer)
+
+      COMMON/IMAGEPRM/trackzpos

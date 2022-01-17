@@ -1,0 +1,10 @@
+# map for coincidence register
+# Category COIN=9
+# ID          anapaw de iu ID
+# Device      BigRIPS=0, ZDS=1
+# Focal plane F3=3, F7=7, F11=11
+# Detector    COIN = 10
+# VSN         CAMAC=0
+# Channel (from 0)
+9, 1, 0 3 10 0 0 ; Coin.Reg.#1
+

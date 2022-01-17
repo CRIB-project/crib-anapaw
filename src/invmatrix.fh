@@ -1,0 +1,5 @@
+      LOGICAL lmierr(2,maxmat)
+      REAL    mx(2,2,maxmat),my(2,2,maxmat)
+      REAL    mxx(2,maxmat)
+
+      COMMON/INVMATRIX/lmierr,mx,my,mxx

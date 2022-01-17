@@ -1,0 +1,4 @@
+      REAL    gppacxyzt(10,5,20)
+
+      COMMON/GPPACFOCUS/gppacxyzt
+

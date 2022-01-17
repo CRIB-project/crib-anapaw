@@ -1,0 +1,5 @@
+      REAL 	 plch2ns(2,npla)
+      REAL       plprm(3,npla)
+      REAL       pldt2x(4,npla)
+      
+      COMMON/PLASTICPRM/plch2ns,plprm,pldt2x

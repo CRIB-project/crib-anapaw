@@ -1,0 +1,25 @@
+
+      INTEGER igx,igy,igzx,igzy,igt
+      PARAMETER (igx=1,igy=2,igzx=3,igzy=4,igt=5)
+
+c --- Parameters --
+c for Kumagai-san's parameters      
+      REAL    ns2mm(2,ngppac)
+      REAL    inoffset(2,ngppac)
+
+c for user parameters
+      REAL    ch2ns(5,ngppac)
+      INTEGER iflag_inside_offset
+      REAL    dzpos(nfocus)
+      INTEGER iflag_outside_offset
+      REAL    outoffset(2,ngppac)
+      LOGICAL iflag_tsumgate(2)
+      REAL    tsumgate(2,ngppac,2) ! (min:max,ngppac,x:y)
+      INTEGER iflag_geom_offset
+      REAL    geomoffset(2,ngppac)
+
+      COMMON/GPPACPRM/ ns2mm, inoffset, 
+     &	               ch2ns, iflag_inside_offset, dzpos,
+     &                 iflag_outside_offset, outoffset,
+     &                 iflag_tsumgate, tsumgate,
+     &                 iflag_geom_offset, geomoffset

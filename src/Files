@@ -1,0 +1,74 @@
+Before experiment
+
+* src/conf/mapper.conf 
+	Map file configurations
+	
+* src/conf/matrix.conf
+	Matrix files 
+
+* src/conf/ppac.conf
+	Kumagai parameter files for PPACs
+
+* src/conf/plastic.conf
+	Plastic ID's and orders
+
+* src/conf/fl.conf
+	Flight lengths and focus offsets
+
+* src/numbers.fh
+	Number of channels
+
+* src/prm/pla/pltcal.prm
+	Parameters for TDC
+
+* src/prm/ppac/ppactcal.prm
+	Parameters for TDC
+
+* src/prm/ppac/geomoffset.prm
+	Geometrical offsets of PPACs
+
+* src/prm/ppac/outoffset.prm
+	Parameters of line calibrations for PPACs
+
+Begining experiment
+
+* src/prm/brho.prm
+	File for Brho values 
+
+* src/prm/ppac/txsum.prm
+	Tsum gates for PPAC-x
+
+* src/prm/ppac/tysum.prm
+	Tsum gates for PPAC-y
+
+* src/prm/ic.prm
+	Parameters of energy calibration
+
+* src/prm/matrix.prm
+	Brho values and matrix configuration 
+
+* src/prm/ppac/trackzpos.prm
+	Z position from focus point for tracking
+
+During experiment
+
+* src/prm/brho.prm
+	File for Brho values 
+
+* src/prm/pid.prm
+	Main file for PID
+
+* src/prm/pid/zcoeff.prm
+	Parameters of Z calibrations for dE counters
+
+* src/prm/matrix.prm
+	Brho values
+
+* src/prm/pid/tof.prm
+	List of TOF configurations and TOF offsets
+
+* src/prm/pid/config.prm
+	List of data used in Z and AoQ calculations
+
+
+

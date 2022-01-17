@@ -1,0 +1,16 @@
+      INTEGER ndali, ndtype
+      PARAMETER (ndali = 186, ndtype=2)
+      
+      REAL daliid(ndali)
+      REAL daliinfo(ndali,ndtype)
+      INTEGER dalimult
+
+      COMMON/DALIDATA/daliid, daliinfo, dalimult
+
+c
+c  dali(i,j)
+c
+c i= ndalidata 1-160: data number
+c j= ndtype
+c    j= 1: Ecal
+c     = 2: Tcal

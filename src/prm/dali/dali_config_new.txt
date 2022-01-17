@@ -1,0 +1,17 @@
+
+Layer #1	6	Scionixes
+Layer #2	6	Scionixes
+Layer #3	8	Scionixes
+Layer #4	10	Scionixes
+Layer #5	10	Scionixes
+Layer #6	12	Scionixes
+Layer #7	14	Scionixes
+Layer #8	14	Saint-Gobains
+Layer #9	14	Saint-Gobains
+Layer #10	14	Saint-Gobains
+Layer #11	14	Saint-Gobains
+Layer #12(W-S1)	8	Saint-Gobains and Bicrons
+Layer #13(W-S2)	20	Saint-Gobains and Bicrons
+Layer #14(W-S3)	16	Saint-Gobains and Bicrons
+Layer #15(W-S4)	12	Saint-Gobains and Bicrons
+Layer #16(W-S5)	8	Saint-Gobains and Bicrons

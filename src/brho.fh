@@ -1,0 +1,5 @@
+      INTEGER numbrho
+      REAL    brholist(4,0:10000)
+      
+      COMMON/BRHOVALUES/numbrho,brholist
+

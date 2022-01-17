@@ -1,0 +1,6 @@
+      INTEGER maxfcs,maxnp(20)
+      INTEGER ppacid(10,20),ppacfcs(2,ngppac)
+      REAL    ppaczpos(2,ngppac)
+
+      COMMON/GPPACCONF/maxfcs,maxnp,ppacid,ppacfcs,ppaczpos
+

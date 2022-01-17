@@ -1,0 +1,19 @@
+c
+c Configurations and parameters for PID
+c
+c Flag for including flight length of tof counter 0/1  (0:same as LISE++)
+0
+c
+c Flag for correction of flight length with reconstruction 0/1
+0
+c
+c Configuration for TOF. In this file, combinations of start and stop, 
+c TOF offsets, and flight lengths are defined.
+'src/prm/pid/tof.prm'
+c
+c Parameters for Z calibrations with I.C., SSD, or other detectors.
+'src/prm/pid/zcoeff.prm'
+c
+c Configurations for calculations of Z and AoQ
+'src/prm/pid/config.prm'
+c

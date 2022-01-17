@@ -1,0 +1,52 @@
+c
+c TOF parameters up to 20 sets
+c
+cStaF, kind, StoF, kind, TOF offset,  
+c
+cfor 1st 44S runs
+c
+    3,    1,    5,    2,     108.73,
+    3,    1,    7,    1,     230.90,
+    3,    1,    8,    1,     311.45,
+    5,    2,    7,    1,     127.57,
+    7,    1,    8,    1,     0.0, 
+    7,    1,   11,    1,     284.51,
+    8,    1,    9,    5,     0.0, 
+    8,    1,   10,    5,     0.0, 
+    8,    1,   11,    1,     198.05,
+    9,    1,   11,    5,     0.0,
+   10,    1,   11,    5,     0.0,
+cc
+c    3,    1,    5,    2,     0.0,
+c    3,    1,    7,    1,   230.80,
+c    3,    1,    8,    1,   303.15,
+c    5,    2,    7,    1,   126.9,
+c    7,    1,    8,    1,     0.0, 
+c    7,    1,   11,    1,   284.51, 
+c    8,    1,    9,    5,     0.0, 
+c    8,    1,   11,    1,   198.05,
+c
+c Stored into tfk(i,j) ( tfk(5,20) )
+c
+c i=1 : Start Focus (StaF) : focus number of TOF start
+c i=2 : kind        : order defined in plastic.conf.
+c                   k = 1 : 1st plastic
+c                       2 : 2nd plastic
+c                       3 : 3rd plastic
+c                       4 : 4th plastic
+c                       5 : ppac ta
+c                       6 : Total E
+c i=3 : Stop Focus  (StoF) : focus number of TOF stop
+c i=4 : kind (same as i=2)
+c i=5 : TOF offset
+c j   : order of TOF set
+c
+c For RF, Focus ID = 0 and kind = 1.
+c
+c ID =   1 : TOF
+c
+c W#:    1       2      3       4       5
+c        ID     F3-F5   F3-F7   F7-F11  F9-F11
+c        6       7      8       9
+c        F3-F8   F8-F9  F8-F11  F5-F7
+c

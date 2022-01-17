@@ -1,0 +1,5 @@
+
+      REAL beta_in,beta_out
+
+      COMMON/DOPPLER/ beta_in, beta_out
+

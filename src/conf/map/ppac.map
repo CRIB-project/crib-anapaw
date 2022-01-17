@@ -1,0 +1,5 @@
+# Map for ppac
+# Note: automatically produced with mapmaker.pl. Do not edit it directly
+2, 1, 12 0  6   1   0, 12 0  6   1   1, 12 0  6   1   2, 12 0  6   1   3, 12 0  6   1  15, ; ppac F1 
+2, 2, 12 0  7  16   6, 12 0  7  16   7, 12 0  7  16   8, 12 0  7  16   9, 12 0  7  16   5, ; ppac F2/F3 B 
+2, 3, 12 0  7  16   1, 12 0  7  16   2, 12 0  7  16   3, 12 0  7  16   4, 12 0  7  16   0, ; ppac F3 A 

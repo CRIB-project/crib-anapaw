@@ -1,0 +1,10 @@
+#
+# Max is 1 (defined by ntotale)
+# 
+# Kind : 1 = NaI(Tl)
+#        2 = LaBr3
+#        3 = Others
+#
+# Focus, Kind, ch2MeV(1), ch2MeV(2),	ch2ns,	position from standard focus
+7 ,         1,       0.0,	1.0,	0.125,	500.,
+11,         1,       0.0,	1.0,	0.125,	1256.,

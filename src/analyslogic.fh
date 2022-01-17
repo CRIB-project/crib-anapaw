@@ -1,0 +1,4 @@
+       logical analyzerflag(50), initencflag(50)
+       logical userflag(10), evterr
+       common/analyslogic/ analyzerflag, initencflag, 
+     &  userflag, evterr
