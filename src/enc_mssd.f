@@ -136,12 +136,12 @@ c         enddo
       enddo
 
 c define telescope         
-c         etel(?,?) =  val(12,1)
-c         etel(?,?) =  val(12,2)
-c         etel(?,?) =  val(12,3)
-c         etel(?,?) =  val(12,4)
-c         etel(?,?) =  val(12,5)
-c         etel(?,?) =  val(12,6)
+         etel(2,1) =  val(12,1)
+         etel(3,1) =  val(12,2)
+         etel(4,1) =  val(12,3)
+         etel(4,2) =  val(12,4)
+         etel(5,1) =  val(12,5)
+         etel(5,2) =  val(12,6)
 
 c       val(*,101....196)        
 
