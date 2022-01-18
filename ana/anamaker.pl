@@ -181,6 +181,9 @@ elsif ($category eq 'tel') {
 
 print OUT 
 "analys
+4
+5
+6
 7
 hst1
 ";
@@ -199,13 +202,13 @@ print OUT
 foreach $id (1..$telmax) {
 
     $name = "tel $id Esum vs dE1";
-    print OUT "0, 6,$id,$id,11, 6,$id,$id,2, 200,0,10, 200,0,40, '$name'\n";
+    print OUT "0, 7,$id,$id,11, 7,$id,$id,2, 200,0,10, 200,0,40, '$name'\n";
     $name = "tel $id dE2 vs dE1";
-    print OUT "0, 6,$id,$id,11, 6,$id,$id,12, 200,0,10, 200,0,15, '$name'\n";
+    print OUT "0, 7,$id,$id,11, 7,$id,$id,12, 200,0,10, 200,0,15, '$name'\n";
     $name = "tel $id E1 vs dE2";
-    print OUT "0, 6,$id,$id,12, 6,$id,$id,13, 200,0,15, 200,0,20, '$name'\n";
+    print OUT "0, 7,$id,$id,12, 7,$id,$id,13, 200,0,15, 200,0,20, '$name'\n";
     $name = "tel $id E2 vs E1";
-    print OUT "0, 6,$id,$id,13, 6,$id,$id,14, 200,0,20, 200,0,20, '$name'\n";
+    print OUT "0, 7,$id,$id,13, 7,$id,$id,14, 200,0,20, 200,0,20, '$name'\n";
 
 }
 
