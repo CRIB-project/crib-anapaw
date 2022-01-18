@@ -28,6 +28,8 @@ c
       EXTERNAL Encdssd          
       EXTERNAL Encmssd          
       EXTERNAL Encssd          
+      EXTERNAL Enctel          
+
 c      EXTERNAL Encmatrix        
 c      EXTERNAL Encimage         
 c      EXTERNAL Encpid           
@@ -61,7 +63,7 @@ c      CALL Callanalyzer(6,6,Enctotale)
       CALL Callanalyzer(4,4,Encdssd)
       CALL Callanalyzer(5,5,Encmssd)
       CALL Callanalyzer(6,6,Encssd)
-
+      CALL Enctel(val(1,1,7),nx,ny,naok(7))
 
 c      IF (Analyzerflag(10)) CALL Encmatrix(val(1,1,10),nx,ny,naok(10))
 c      IF (Analyzerflag(11)) CALL Encpid(val(1,1,11),nx,ny,naok(11))

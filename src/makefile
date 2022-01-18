@@ -36,6 +36,7 @@ LDFLAGS  =
 ADD      = enc_coin.o \
 	   enc_ssd.o \
 	   enc_rf.o enc_dssd.o enc_mssd.o enc_ppac.o\
+	   enc_tel.o\
            dssd_prm.o ssd_prm.o mssd_prm.o ppac_prm.o
 
 #	   encic.o loadicprm.o \

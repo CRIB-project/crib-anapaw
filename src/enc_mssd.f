@@ -26,6 +26,7 @@ c    The last number "1000" is to detect overflow
 
       include 'analyslogic.fh'
       include 'ssd.inc'
+      include 'tel.inc'
 
       if (initencflag(analyzer)) then
          write(*,*) ' ANAPAW-M : enc_ssd analys =',analyzer
@@ -131,8 +132,16 @@ c         do j=1,ndata
 c            val(10+j,naok) = rawdata(j,id)
 c            write(*,*) id, ' : ',j,' , ',rawdata(j,id)
 c         enddo
+
       enddo
 
+c define telescope         
+c         etel(?,?) =  val(12,1)
+c         etel(?,?) =  val(12,2)
+c         etel(?,?) =  val(12,3)
+c         etel(?,?) =  val(12,4)
+c         etel(?,?) =  val(12,5)
+c         etel(?,?) =  val(12,6)
 
 c       val(*,101....196)        
 
