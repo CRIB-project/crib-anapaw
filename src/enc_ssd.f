@@ -37,10 +37,10 @@ c         write(*,*) 'id =',hitdet(i),' nhit =',nhitdata(id)
          val(1,naok) = id
          val(2,naok) = rawdata(1,id) ! Araw
          val(3,naok) = rawdata(2,id) ! Traw
-         val(4,naok) = (rawdata(1,id)-Offset_a_dssd(ID)) 
-     &        * Gain_a_dssd(ID) ! Acal
-         val(5,naok) = (rawdata(2,id)-Offset_t_dssd(ID))  
-     &        * Gain_t_dssd(ID) !Tcal
+         val(4,naok) = (rawdata(1,id)-Offset_a_ssd(ID)) 
+     &        * Gain_a_ssd(ID) ! Acal
+         val(5,naok) = (rawdata(2,id)-Offset_t_ssd(ID))  
+     &        * Gain_t_ssd(ID) !Tcal
 
 c         do j=1,ndata
 c            val(10+j,naok) = rawdata(j,id)
