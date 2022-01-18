@@ -15,6 +15,7 @@ c  2021.11 Made by HY from encgeneric
 
       include 'analyslogic.fh'
       include 'ssd.inc'
+      include 'tel.inc'
 
       if (initencflag(analyzer)) then
          write(*,*) ' ANAPAW-M : enc_ssd analys =',analyzer
@@ -47,6 +48,19 @@ c            val(10+j,naok) = rawdata(j,id)
 c            write(*,*) id, ' : ',j,' , ',rawdata(j,id)
 c         enddo
       enddo
+
+c telescope; assuming naok = id
+         etel(1,3) =  val(4,1) ! means tel 1 3rd layer is Acal for id=1 ssd
+         etel(1,4) =  val(4,2)
+         etel(2,3) =  val(4,3)
+         etel(2,4) =  val(4,4)
+         etel(3,3) =  val(4,5)
+         etel(3,4) =  val(4,6)
+         etel(4,3) =  val(4,7)
+         etel(4,4) =  val(4,8)
+         etel(5,3) =  val(4,9)
+         etel(5,4) =  val(4,10)
+c not yet for timings
 
       return
       end
