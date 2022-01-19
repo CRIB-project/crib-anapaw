@@ -5,7 +5,7 @@ c  2021.11 Made by HY from encgeneric
       implicit none
       integer nx, ny,naok
       real val(nx,ny)
-      integer i,j,id,layer
+      integer id,layer
       real esum
 
       include 'analyslogic.fh'

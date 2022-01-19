@@ -54,6 +54,7 @@ c         write(*,*) 'id =',hitdet(i),' nhit =',nhitdata(id)
          val(5,naok) = rawdata(4,id) ! P2
          val(6,naok) = rawdata(5,id) ! Traw
 
+
 c     Need a position spectrum-> ch number
 
          coffset = pos_offset_mssd(2*id-1)
@@ -116,8 +117,21 @@ c     &       pos_highpeak_mssd(id)
             val(13,naok) = 0
          endif
 
+c digitized position
          val(14,naok) = pos1 ! P1
          val(15,naok) = pos2 ! P2
+
+
+         if ((id.eq.3).or.(id.eq.5)) then ! xstrip rev, only for this experiment
+            val(17,naok) = 17-pos1 ! Strip #1
+            val(18,naok) = 17-pos2 ! Strip #2
+         else if ((id.eq.4).or.(id.eq.6)) then ! ystrip, only for this experiment
+            val(17,naok) = ypattern(pos1) ! Strip #1
+            val(18,naok) = ypattern(pos2) ! Strip #2
+         else 
+            val(17,naok) = pos1 ! Strip #1
+            val(18,naok) = pos2 ! Strip #2
+         endif
 
 c        write (*,*) 'pos1=',val(14,naok)
 
@@ -132,6 +146,8 @@ c         do j=1,ndata
 c            val(10+j,naok) = rawdata(j,id)
 c            write(*,*) id, ' : ',j,' , ',rawdata(j,id)
 c         enddo
+
+
 
       enddo
 
@@ -160,7 +176,7 @@ c get postion
             val(2,naok) = rawdata(1,id) ! Araw1
          endif
          if (((ID-1)*16+pos2).eq.i) then
-            val(2,naok) = rawdata(2,id) ! Araw1
+            val(2,naok) = rawdata(2,id) ! Araw2
          endif
          val(6,naok) = rawdata(5,id) ! Traw
 
