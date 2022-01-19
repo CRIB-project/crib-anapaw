@@ -90,7 +90,7 @@ print OUT "0, 4,1,64,1, 4,1,64,5, 64,0.5,64.5, 200,0,800, 'DSSD Tcal vs ch'\n";
 foreach $ntel (1..4) {
     $start=($ntel-1)*16+1; $end=$start+15;
     print OUT "0, 4,$start,$end,6, 4,$start,$end,2, 16,0.5,16.5, 200,0,4000, '$telnames[$ntel] Eraw vs nstrip'\n";
-    print OUT "0, 4,$start,$end,6, 4,$start,$end,3, 16,0.5,16.5, 200,0,4000, '$telnames[$ntel] Ecal vs nstrip'\n";
+    print OUT "0, 4,$start,$end,6, 4,$start,$end,3, 16,0.5,16.5, 200,0,30, '$telnames[$ntel] Ecal vs nstrip'\n";
 }
 
 
