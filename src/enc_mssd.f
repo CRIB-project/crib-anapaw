@@ -11,7 +11,7 @@ c  2021.11 Made by HY from encgeneric
       integer nhitdet
       integer analyzer
       real val(nx,ny)
-      integer i,j,id,pos1,pos2
+      integer i,j,id,pos1,pos2,strip1,strip2
 
       real tmp,tmp2, coffset, civ, chigh
       real pos_cal1(18)
@@ -123,16 +123,30 @@ c digitized position
 
 
          if ((id.eq.3).or.(id.eq.5)) then ! xstrip rev, only for this experiment
+            strip1 = 17-pos1
+            strip2 = 17-pos2
             val(17,naok) = 17-pos1 ! Strip #1
             val(18,naok) = 17-pos2 ! Strip #2
          else if ((id.eq.4).or.(id.eq.6)) then ! ystrip, only for this experiment
+            strip1 = ypattern(pos1)
+            strip2 = ypattern(pos2)
             val(17,naok) = ypattern(pos1) ! Strip #1
             val(18,naok) = ypattern(pos2) ! Strip #2
          else 
+            strip1 = pos1
+            strip2 = pos2
             val(17,naok) = pos1 ! Strip #1
             val(18,naok) = pos2 ! Strip #2
          endif
 
+         do j=1,16
+            if(strip1.eq.j) then
+                val(20+j,naok) = rawdata(1,id)
+            endif
+            if(strip2.eq.j) then
+                val(40+j,naok) = rawdata(2,id)
+            endif
+         end do
 c        write (*,*) 'pos1=',val(14,naok)
 
          if ((pos1.ge.1).and.(pos1.le.16)) then 
