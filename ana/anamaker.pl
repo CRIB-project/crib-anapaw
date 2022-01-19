@@ -78,7 +78,7 @@ foreach $id (1..64) {
 
     @name[$id] = "$telnames[$ntel] T${nstrip}raw";
     
-    print OUT "0, 4,$id,$id,3, 1000,0,4000, '$name[$id]'\n";
+    print OUT "0, 4,$id,$id,3, 1000,0,10000, '$name[$id]'\n";
 }
 
 print OUT "hst2\n";
@@ -86,6 +86,13 @@ print OUT "0, 4,1,64,1, 4,1,64,2, 64,0.5,64.5, 200,0,4000, 'DSSD Eraw vs ch'\n";
 print OUT "0, 4,1,64,1, 4,1,64,4, 64,0.5,64.5, 200,0,20, 'DSSD Ecal vs ch'\n";
 print OUT "0, 4,1,64,1, 4,1,64,3, 64,0.5,64.5, 200,0,10000, 'DSSD Traw vs ch'\n";
 print OUT "0, 4,1,64,1, 4,1,64,5, 64,0.5,64.5, 200,0,800, 'DSSD Tcal vs ch'\n";
+
+foreach $ntel (1..4) {
+    $start=($ntel-1)*16+1; $end=$start+15;
+    print OUT "0, 4,$start,$end,6, 4,$start,$end,2, 16,0.5,16.5, 200,0,4000, '$telnames[$ntel] Eraw vs nstrip'\n";
+    print OUT "0, 4,$start,$end,6, 4,$start,$end,3, 16,0.5,16.5, 200,0,4000, '$telnames[$ntel] Ecal vs nstrip'\n";
+}
+
 
 
 print OUT "exit\n";
