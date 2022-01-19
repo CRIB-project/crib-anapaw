@@ -11,7 +11,7 @@ c  2021.11 Made by HY from encgeneric
       integer nhitdet
       integer analyzer
       real val(nx,ny)
-      integer i,j,id
+      integer i,id,nstrip
 
       include 'analyslogic.fh'
       include 'ssd.inc'
@@ -43,6 +43,18 @@ c         write(*,*) 'id =',hitdet(i),' nhit =',nhitdata(id)
          val(5,naok) = (rawdata(2,id)-Offset_t_dssd(ID))  
      &        * Gain_t_dssd(ID) !Tcal
 
+         nstrip = mod(id,16)
+         if (nstrip.eq.0) then 
+            nstrip = 16
+         endif
+
+         if (id.le.16) then ! xstrip
+            val(6,naok) = nstrip
+         else 
+            val(6,naok) = ypattern(nstrip)
+         endif
+         
+         Write(*,*) 'nstrip,val(6,naok)=',  nstrip,val(6,naok) 
 
 c         Write(*,*) rawdata(2,id)
 c         Write(*,*) val(5,naok)
