@@ -52,4 +52,4 @@ c
      &  pos_offset_mssd,pos_interval_mssd,pos_highpeak_mssd,
      &  offset_a_ssd, gain_a_ssd,
      &  offset_t_ssd, gain_t_ssd
-     &  ypattern
+ 
