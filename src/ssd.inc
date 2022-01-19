@@ -33,6 +33,11 @@ c add okawa (12/28)
 
 
 c	real ped_lowgain(16), gain_lowgain(16)
+		
+        integer ypattern(16) 
+        Data ypattern/8,7,6,5,4,3,2,1,9,10,11,12,13,14,15,16/  !reorder ADC channel-> strip channel by geometrical order
+
+
 
 c
         common/COM_SSD/
@@ -47,3 +52,4 @@ c
      &  pos_offset_mssd,pos_interval_mssd,pos_highpeak_mssd,
      &  offset_a_ssd, gain_a_ssd,
      &  offset_t_ssd, gain_t_ssd
+     &  ypattern
