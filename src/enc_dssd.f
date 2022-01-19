@@ -54,7 +54,7 @@ c         write(*,*) 'id =',hitdet(i),' nhit =',nhitdata(id)
             val(6,naok) = ypattern(nstrip)
          endif
          
-         Write(*,*) 'nstrip,val(6,naok)=',  nstrip,val(6,naok) 
+c         Write(*,*) 'nstrip,val(6,naok)=',  nstrip,val(6,naok) 
 
 c         Write(*,*) rawdata(2,id)
 c         Write(*,*) val(5,naok)
