@@ -34,8 +34,8 @@ c add okawa (12/28)
 
 c	real ped_lowgain(16), gain_lowgain(16)
 		
-        integer ypattern(16) 
-        Data ypattern/8,7,6,5,4,3,2,1,9,10,11,12,13,14,15,16/  !reorder ADC channel-> strip channel by geometrical order
+        integer ypattern(18) 
+        Data ypattern/0,8,7,6,5,4,3,2,1,9,10,11,12,13,14,15,16,17/  !reorder ADC channel-> strip channel by geometrical order
 
 
 

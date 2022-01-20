@@ -128,10 +128,10 @@ c digitized position
             val(17,naok) = 17-pos1 ! Strip #1
             val(18,naok) = 17-pos2 ! Strip #2
          else if ((id.eq.4).or.(id.eq.6)) then ! ystrip, only for this experiment
-            strip1 = ypattern(pos1)
-            strip2 = ypattern(pos2)
-            val(17,naok) = ypattern(pos1) ! Strip #1
-            val(18,naok) = ypattern(pos2) ! Strip #2
+            strip1 = ypattern(pos1+1)
+            strip2 = ypattern(pos2+1)
+            val(17,naok) = ypattern(pos1+1) ! Strip #1
+            val(18,naok) = ypattern(pos2+1) ! Strip #2
          else 
             strip1 = pos1
             strip2 = pos2
