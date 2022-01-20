@@ -147,6 +147,17 @@ c digitized position
                 val(40+j,naok) = rawdata(2,id)
             endif
          end do
+
+         do j=1,16
+            if(strip1.eq.j) then
+                val(60+j,naok) = (rawdata(1,id)-Offset_a_mssd((ID-1)*16
+     &          +pos1)) * Gain_a_mssd((ID-1)*16+pos1) ! Acal
+            endif
+            if(strip2.eq.j) then
+                val(80+j,naok) = (rawdata(2,id)-Offset_a_mssd((ID-1)*16
+     &          +pos2)) * Gain_a_mssd((ID-1)*16+pos2) ! Acal
+            endif
+         end do
 c        write (*,*) 'pos1=',val(14,naok)
 
          if ((pos1.ge.1).and.(pos1.le.16)) then 
