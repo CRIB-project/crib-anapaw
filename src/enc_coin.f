@@ -32,7 +32,7 @@ c     lenDet                    : the length of array
 
 c local
       INTEGER i,id
-      INTEGER ibit, imask, icoin, icoin2
+      INTEGER ibit, imask, icoin
 
       IF (initencflag(3)) THEN
          initencflag(3) = .FALSE.

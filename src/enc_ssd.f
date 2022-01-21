@@ -11,7 +11,7 @@ c  2021.11 Made by HY from encgeneric
       integer nhitdet
       integer analyzer
       real val(nx,ny)
-      integer i,j,id
+      integer i,id
 
       include 'analyslogic.fh'
       include 'ssd.inc'

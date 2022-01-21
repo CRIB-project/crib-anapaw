@@ -108,6 +108,9 @@ c
       Emax = dummy
       Tmax = dummy
       IDmax = 0
+      Arawmax = dummy
+      Trawmax = dummy
+
 c
       do i=I1,I2
         if (val(4,i).gt.Amax) then

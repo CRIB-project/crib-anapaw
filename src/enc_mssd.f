@@ -13,7 +13,7 @@ c  2021.11 Made by HY from encgeneric
       real val(nx,ny)
       integer i,j,id,pos1,pos2,strip1,strip2
 
-      real tmp,tmp2, coffset, civ, chigh
+      real tmp, coffset, civ, chigh
       real pos_cal1(18)
 c    The last number "1000" is to detect overflow
       data pos_cal1/0.0,0.053,0.11,0.169,0.239,0.30,0.359,0.421,0.49,

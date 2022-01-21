@@ -11,7 +11,7 @@ c  2021.12 Made by HY from encgeneric & old enc_ppac.f
       integer nhitdet
       integer analyzer
       real val(nx,ny)
-      integer i,j,id
+      integer i,id
 
       Real     TXsum(5),TYsum(5),dTX(5),dTY(5)
       Real     X(5),Y(5),dx(5),dy(5),xx,yy
