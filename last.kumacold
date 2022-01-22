@@ -1,27 +1,27 @@
-*** Begin of history file: Tue Jan 18 13:42:38 2022
+*** Begin of history file: Fri Jan 21 10:26:51 2022
+a/l
+cle f
 a/l
 a/l
-clear
-erase
-ana/loop ridf/data0077.ridf
-ls
-hli
-ht 101
+a/l
+a/l
+a/l
+a/l
+a/l ridf/primary0100.ridf
+i
 zone 2 2
-ht zone
-zone
-zone 2 3
-ht 124
-opt liny
-ht 124
-ht 109(500,1500)
-h/p 109(500,1500)
-h/p 109(500:1500)
-h/p 109(500.,1500.)
-hi/pl 109(500.,1500.)
-zone 2 3
-hth 109
+lgz
+ht 107
+lny
+ht 107
+ht 107
+ht 107
+ht 107 cont
 ht 109
-opt logy
-opt logy
-*** End   of history file: Tue Jan 18 14:31:03 2022
+ht 109
+ht 109
+ht 109
+ht 109
+ht 109
+ht 109
+*** End   of history file: Fri Jan 21 23:47:13 2022

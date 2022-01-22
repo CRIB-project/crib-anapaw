@@ -34,7 +34,11 @@ c      write(*,*) ' ANAPAW-M : analyzer =',analyzer, ' nhitdet =',nhitdet
       do i=1,nhitdet
          id = hitdet(i)
 c         write(*,*) 'id =',hitdet(i),' nhit =',nhitdata(id)
-         naok = naok + 1
+c
+c     use id instead of sequential naok         
+c         naok = naok + 1
+         naok=id
+c
          val(1,naok) = id
          val(2,naok) = rawdata(1,id) ! Araw
          val(3,naok) = rawdata(2,id) ! Traw
@@ -57,7 +61,11 @@ c         write(*,*) 'id =',hitdet(i),' nhit =',nhitdata(id)
 c         Write(*,*) 'nstrip,val(6,naok)=',  nstrip,val(6,naok) 
 
 c         Write(*,*) rawdata(2,id)
-c         Write(*,*) val(5,naok)
+
+c         if ((id.le.32).and.(id.ge.17)) then 
+c         if ((id.le.32)) then 
+c            Write(*,*) id, val(4,naok)
+c         endif
 
 c         do j=1,ndata
 c            val(10+j,naok) = rawdata(j,id)
@@ -77,6 +85,8 @@ c         enddo
       etel(2,2) =  val(5,103)
       etel(3,2) =  val(5,104)
 
+c      write(*,*) 'etel(1,1)',etel(1,1)
+c      write(*,*) 'etel(1,2)',etel(1,2)
 
       return
       end
@@ -120,6 +130,9 @@ c
            Tmax = val(5,i)
            Arawmax = val(2,i)
            Trawmax = val(3,i)
+
+c           write(*,*) 'Amax->',val(4,i)
+
         endif  
       enddo
 c
