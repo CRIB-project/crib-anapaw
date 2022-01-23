@@ -1,27 +1,52 @@
-*** Begin of history file: Fri Jan 21 10:26:51 2022
+*** Begin of history file: Sun Jan 23 00:19:54 2022
 a/l
-cle f
-a/l
-a/l
-a/l
-a/l
-a/l
-a/l
-a/l ridf/primary0100.ridf
+a/l ridf/secondary0150.ridf
 i
-zone 2 2
-lgz
-ht 107
+ht
+lgy
+ht
+hn
+hn
+hn
+hn
+hn
+hn
+hn
+hn
+hn
+hn
+hn
+hn
 lny
-ht 107
-ht 107
-ht 107
-ht 107 cont
-ht 109
-ht 109
-ht 109
-ht 109
-ht 109
-ht 109
-ht 109
-*** End   of history file: Fri Jan 21 23:47:13 2022
+htp colz
+lgz
+htp colz
+hn
+hn
+hn
+hn
+hn
+hn
+hn
+hn
+hn
+hn
+htp colz
+i
+hstore hbk/secondary0150_lowgain.hbk
+era
+a/l ridf/secondary0151.ridf
+i
+ht 105
+lgy
+ht
+hn
+hn
+zon 2 2
+i
+ht 105
+hn
+hn
+hn
+xf
+*** End   of history file: Sun Jan 23 00:24:58 2022
