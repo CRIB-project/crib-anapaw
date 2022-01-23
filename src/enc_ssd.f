@@ -33,7 +33,7 @@ c      write(*,*) ' ANAPAW-M : analyzer =',analyzer, ' nhitdet =',nhitdet
 
       do i=1,nhitdet
          id = hitdet(i)
-c         write(*,*) 'id =',hitdet(i),' nhit =',nhitdata(id)
+c         write(*,*) 'id =',hitdet(i),' nhitdet =',nhitdet
          naok = id          
 c         naok = naok + 1
          val(1,naok) = id
@@ -44,14 +44,16 @@ c         naok = naok + 1
          val(5,naok) = (rawdata(2,id)-Offset_t_ssd(ID))  
      &        * Gain_t_ssd(ID) !Tcal
 
-c         do j=1,ndata
-c            val(10+j,naok) = rawdata(j,id)
-c            write(*,*) id, ' : ',j,' , ',rawdata(j,id)
-c         enddo
+c         write(*,*) 'naok, val(4,naok)=',naok,val(4,naok)
+
       enddo
       naok = nhitdet
 
+c      write(*,*) 'val(4,1),val(4,2)=',val(4,1),val(4,2)
+
 c telescope; assuming naok = id
+
+
          etel(1,3) =  val(4,1) ! means tel 1 3rd layer is Acal for id=1 ssd
          etel(1,4) =  val(4,2)
          etel(2,3) =  val(4,3)

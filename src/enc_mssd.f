@@ -110,6 +110,8 @@ c     &       pos_highpeak_mssd(id)
          else 
             val(12,naok) = 0
          endif
+c         write (*,*) 'pos1=', pos1
+c         write (*,*) 'val(12,naok),id=', val(12,naok),id
 
          if ((pos2.ge.1).and.(pos2.le.16)) then 
          val(13,naok) = (rawdata(2,id)-Offset_a_mssd((ID-1)*16+pos2)) 

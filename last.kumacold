@@ -1,52 +1,52 @@
-*** Begin of history file: Sun Jan 23 00:19:54 2022
-a/l
-a/l ridf/secondary0150.ridf
+*** Begin of history file: Sun Jan 23 22:03:29 2022
+a/l ridf/physics0175.ridf
 i
-ht
+ht 101
 lgy
-ht
+ht 101
+ht 102
 hn
-hn
-hn
-hn
-hn
-hn
-hn
-hn
-hn
-hn
-hn
-hn
-lny
-htp colz
-lgz
-htp colz
-hn
-hn
-hn
-hn
-hn
-hn
-hn
-hn
-hn
-hn
-htp colz
+hb
+hb
+zoo
 i
-hstore hbk/secondary0150_lowgain.hbk
-era
-a/l ridf/secondary0151.ridf
+ht 111
+ht 109
+zone 2 2
+ht 101
+ht 109
+ht 117
+ht 125
+ht 141
+ht 142
+ht 141
+ht 133
+ht 117
+ht 125
+ht 118
+ht 126
+zone 1 1
+ht 117
+ht 118
+ht 117
+zo
+zone 2 2
+ht 133
+ht 141
+zone 1 1
 i
-ht 105
-lgy
-ht
+ht 141
+zoo
+ht 141
+zoo
 hn
-hn
-zon 2 2
-i
-ht 105
-hn
-hn
-hn
-xf
-*** End   of history file: Sun Jan 23 00:24:58 2022
+ht 133
+zoo
+ht 133
+zoo
+ht 125
+zoo
+ht 125
+zoo
+ht 117
+*** End   of history file: Sun Jan 23 22:30:11 2022
