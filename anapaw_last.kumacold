@@ -1,14 +1,4 @@
-*** Begin of history file: Sun Jan 23 19:24:32 2022
-a/l ridf/physics0168.ridf
-htp cont
-hbt cont
-i
-ht 155 cont
-hnt cont
-hnt cont
-hnt cont
-min 0 0.1
-htp cont
-clear
+*** Begin of history file: Sun Jan 23 19:44:42 2022
+a/l ridf/physics168.ridf
 exit
-*** End   of history file: Sun Jan 23 19:44:40 2022
+*** End   of history file: Sun Jan 23 19:49:16 2022
