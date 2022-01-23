@@ -46,7 +46,8 @@ c      write(*,*) ' ANAPAW-M : analyzer =',analyzer, ' nhitdet =',nhitdet
       do i=1,nhitdet
          id = hitdet(i)
 c         write(*,*) 'id =',hitdet(i),' nhit =',nhitdata(id)
-         naok = naok + 1
+         naok = id
+c         naok = naok + 1
          val(1,naok) = id
          val(2,naok) = rawdata(1,id) ! Araw1
          val(3,naok) = rawdata(2,id) ! Araw2
@@ -175,6 +176,8 @@ c         enddo
 
 
       enddo
+
+      naok = nhitdet
 
 c define telescope         
          etel(2,1) =  val(12,1)
