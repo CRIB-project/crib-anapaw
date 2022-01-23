@@ -34,7 +34,8 @@ c      write(*,*) ' ANAPAW-M : analyzer =',analyzer, ' nhitdet =',nhitdet
       do i=1,nhitdet
          id = hitdet(i)
 c         write(*,*) 'id =',hitdet(i),' nhit =',nhitdata(id)
-         naok = naok + 1
+         naok = id          
+c         naok = naok + 1
          val(1,naok) = id
          val(2,naok) = rawdata(1,id) ! Araw
          val(3,naok) = rawdata(2,id) ! Traw
@@ -48,6 +49,7 @@ c            val(10+j,naok) = rawdata(j,id)
 c            write(*,*) id, ' : ',j,' , ',rawdata(j,id)
 c         enddo
       enddo
+      naok = nhitdet
 
 c telescope; assuming naok = id
          etel(1,3) =  val(4,1) ! means tel 1 3rd layer is Acal for id=1 ssd
