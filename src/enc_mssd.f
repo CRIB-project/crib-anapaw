@@ -215,8 +215,8 @@ c get postion
          pos1=int(val(14,id))
          pos2=int(val(15,id))
 
-         if ((pos1.ge.1).and.(pos1.le.16).and.
-     &       (pos2.ge.1).and.(pos2.le.16)) then 
+         if (((pos1.ge.1).and.(pos1.le.16)).or.
+     &       ((pos2.ge.1).and.(pos2.le.16))) then 
 
 c            write (*,*) 'i,id,nch ', i, id, nch
 c            write (*,*) 'pos1,pos2 ', pos1, pos2
