@@ -11,7 +11,7 @@ c  2021.11 Made by HY from encgeneric
       integer nhitdet
       integer analyzer
       real val(nx,ny)
-      integer i,j,id,pos1,pos2,strip1,strip2
+      integer i,j,id,sid,pos1,pos2,strip1,strip2
 
       real tmp, coffset, civ, chigh
       real pos_cal1(18)
@@ -48,12 +48,18 @@ c      write(*,*) ' ANAPAW-M : analyzer =',analyzer, ' nhitdet =',nhitdet
 c         write(*,*) 'id =',hitdet(i),' nhit =',nhitdata(id)
          naok = id
 c         naok = naok + 1
+c Jan 24 MUX2-1 and MUX-3-1 merged
+         sid = id
+         if (id.eq.3) then  
+            sid= 5
+         endif   
+
          val(1,naok) = id
-         val(2,naok) = rawdata(1,id) ! Araw1
-         val(3,naok) = rawdata(2,id) ! Araw2
-         val(4,naok) = rawdata(3,id) ! P1
-         val(5,naok) = rawdata(4,id) ! P2
-         val(6,naok) = rawdata(5,id) ! Traw
+         val(2,naok) = rawdata(1,sid) ! Araw1
+         val(3,naok) = rawdata(2,sid) ! Araw2
+         val(4,naok) = rawdata(3,sid) ! P1
+         val(5,naok) = rawdata(4,sid) ! P2
+         val(6,naok) = rawdata(5,sid) ! Traw
 
 
 c     Need a position spectrum-> ch number
@@ -62,7 +68,7 @@ c     Need a position spectrum-> ch number
          civ = pos_interval_mssd(2*id-1) 
          chigh = pos_highpeak_mssd(2*id-1)
 
-         tmp = (rawdata(3,id) - coffset + 0.5*civ) /
+         tmp = (rawdata(3,sid) - coffset + 0.5*civ) /
      &           (chigh - coffset + civ)
 
          pos1 = 0
@@ -86,7 +92,7 @@ c     &       pos_highpeak_mssd(id)
          civ = pos_interval_mssd(2*id) 
          chigh = pos_highpeak_mssd(2*id)
 
-         tmp = (rawdata(4,id) - coffset + 0.5*civ) /
+         tmp = (rawdata(4,sid) - coffset + 0.5*civ) /
      &           (chigh - coffset + civ)
 
 
@@ -105,7 +111,7 @@ c     &       pos_highpeak_mssd(id)
 
 
          if ((pos1.ge.1).and.(pos1.le.16)) then 
-         val(12,naok) = (rawdata(1,id)-Offset_a_mssd((ID-1)*16+pos1)) 
+         val(12,naok) = (rawdata(1,sid)-Offset_a_mssd((ID-1)*16+pos1)) 
      &        * Gain_a_mssd((ID-1)*16+pos1) ! Acal
          else 
             val(12,naok) = 0
@@ -114,7 +120,7 @@ c         write (*,*) 'pos1=', pos1
 c         write (*,*) 'val(12,naok),id=', val(12,naok),id
 
          if ((pos2.ge.1).and.(pos2.le.16)) then 
-         val(13,naok) = (rawdata(2,id)-Offset_a_mssd((ID-1)*16+pos2)) 
+         val(13,naok) = (rawdata(2,sid)-Offset_a_mssd((ID-1)*16+pos2)) 
      &        * Gain_a_mssd((ID-1)*16+pos2) ! Acal
          else 
             val(13,naok) = 0
@@ -144,27 +150,27 @@ c digitized position
 
          do j=1,16
             if(strip1.eq.j) then
-                val(20+j,naok) = rawdata(1,id)
+                val(20+j,naok) = rawdata(1,sid)
             endif
             if(strip2.eq.j) then
-                val(40+j,naok) = rawdata(2,id)
+                val(40+j,naok) = rawdata(2,sid)
             endif
          end do
 
          do j=1,16
             if(strip1.eq.j) then
-                val(60+j,naok) = (rawdata(1,id)-Offset_a_mssd((ID-1)*16
+                val(60+j,naok) = (rawdata(1,sid)-Offset_a_mssd((ID-1)*16
      &          +pos1)) * Gain_a_mssd((ID-1)*16+pos1) ! Acal
             endif
             if(strip2.eq.j) then
-                val(80+j,naok) = (rawdata(2,id)-Offset_a_mssd((ID-1)*16
+                val(80+j,naok) = (rawdata(2,sid)-Offset_a_mssd((ID-1)*16
      &          +pos2)) * Gain_a_mssd((ID-1)*16+pos2) ! Acal
             endif
          end do
 c        write (*,*) 'pos1=',val(14,naok)
 
          if ((pos1.ge.1).and.(pos1.le.16)) then 
-         val(16,naok) = (rawdata(5,id)-Offset_t_mssd((ID-1)*16+pos1))  
+         val(16,naok) = (rawdata(5,sid)-Offset_t_mssd((ID-1)*16+pos1))  
      &        * Gain_t_mssd((ID-1)*16+pos1) !Tcal pos1 only?
          else 
             val(16,naok) = 0

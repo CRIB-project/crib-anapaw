@@ -1,52 +1,27 @@
-*** Begin of history file: Sun Jan 23 19:14:21 2022
-exe kumac/runs
+*** Begin of history file: Mon Jan 24 18:21:00 2022
+a/l ridf/physics0183.ridf
+ht
+ht
+book ana/mpos.ana
+start
+a/l ridf/physics0183.ridf
+ht
+hn
+hn
+hn
+hn
+hn
+hn
+hn
+hn
+hn
+hn
+hn
+hn
+start
 i
 ht 101
 hn
+ht 109
 hn
-hn cont
-lgz
-lgz
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-*** End   of history file: Sun Jan 23 23:04:09 2022
+*** End   of history file: Mon Jan 24 18:21:56 2022
