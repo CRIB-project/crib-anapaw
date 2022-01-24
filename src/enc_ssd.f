@@ -64,7 +64,19 @@ c telescope; assuming naok = id
          etel(4,4) =  val(4,8)
          etel(5,3) =  val(4,9)
          etel(5,4) =  val(4,10)
-c not yet for timings
+
+c timings
+         ttel(1,3) =  val(5,1) 
+         ttel(1,4) =  val(5,2)
+         ttel(2,3) =  val(5,3)
+         ttel(2,4) =  val(5,4)
+         ttel(3,3) =  val(5,5)
+         ttel(3,4) =  val(5,6)
+         ttel(4,3) =  val(5,7)
+         ttel(4,4) =  val(5,8)
+         ttel(5,3) =  val(5,9)
+         ttel(5,4) =  val(5,10)
+
 
       return
       end

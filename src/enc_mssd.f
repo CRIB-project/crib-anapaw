@@ -11,7 +11,7 @@ c  2021.11 Made by HY from encgeneric
       integer nhitdet
       integer analyzer
       real val(nx,ny)
-      integer i,j,id,sid,pos1,pos2,strip1,strip2
+      integer i,j,id,nch,sid,pos1,pos2,strip1,strip2
 
       real tmp, coffset, civ, chigh
       real pos_cal1(18)
@@ -127,8 +127,8 @@ c         write (*,*) 'val(12,naok),id=', val(12,naok),id
          endif
 
 c digitized position
-         val(14,naok) = pos1 ! P1
-         val(15,naok) = pos2 ! P2
+         val(14,naok) = pos1 ! P1n
+         val(15,naok) = pos2 ! P2n
 
 
          if ((id.eq.3).or.(id.eq.5)) then ! xstrip rev, only for this experiment
@@ -195,27 +195,48 @@ c define telescope
          etel(5,1) =  val(12,5)
          etel(5,2) =  val(12,6)
 
+         ttel(2,1) =  val(16,1)
+         ttel(3,1) =  val(16,2)
+         ttel(4,1) =  val(16,3)
+         ttel(4,2) =  val(16,4)
+         ttel(5,1) =  val(16,5)
+         ttel(5,2) =  val(16,6)
+
 c       val(*,101....196)        
 
       do i=101,196
 
 c         write(*,*) 'id =',hitdet(i),' nhit =',nhitdata(id)
          naok = naok + 1
-         val(1,naok) = i
-
+         val(1,naok) = i !id
 c get postion 
-         id=(i-101)/16+1
+         nch=i-100
+         id=nch/16+1
          pos1=int(val(14,id))
          pos2=int(val(15,id))
 
-         if (((ID-1)*16+pos1).eq.i) then
-            val(2,naok) = rawdata(1,id) ! Araw1
-         endif
-         if (((ID-1)*16+pos2).eq.i) then
-            val(2,naok) = rawdata(2,id) ! Araw2
-         endif
-         val(6,naok) = rawdata(5,id) ! Traw
+         if ((pos1.ge.1).and.(pos1.le.16).and.
+     &       (pos2.ge.1).and.(pos2.le.16)) then 
 
+c            write (*,*) 'i,id,nch ', i, id, nch
+c            write (*,*) 'pos1,pos2 ', pos1, pos2
+c            write (*,*) 'posid1,2 ', (ID-1)*16+pos1,(ID-1)*16+pos2
+
+            if (((ID-1)*16+pos1).eq.nch) then
+               val(2,naok) = val(2,id) ! Araw1
+               val(4,naok) = val(12,id) ! Araw1
+               val(3,naok) = val(5,id) ! Traw
+               val(5,naok) = val(16,id) ! Tcal
+            endif
+            if (((ID-1)*16+pos2).eq.nch) then
+               val(2,naok) = val(3,id) ! Araw2
+               val(4,naok) = val(13,id) ! Araw2
+               val(3,naok) = val(5,id) ! Traw
+               val(5,naok) = val(16,id) ! Tcal
+            endif
+            
+            val(6,naok) = nch ! Nch
+         endif
 
       enddo
 

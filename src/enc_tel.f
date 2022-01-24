@@ -33,7 +33,7 @@ c 21....2x timing for each layer
 c            write(*,*) "id,layer=",id,layer
 c            write(*,*) "etel(id,layer)=",etel(id,layer)
             val(layer+10,naok) = etel(id,layer) ! energy (MeV)
-            val(layer+20,naok) = etel(id,layer) ! timing (ns)
+            val(layer+20,naok) = ttel(id,layer) ! timing (ns)
 c            if (etel(id,layer).gt.0.050)   ! such code may be needed to supress pedestal
             if (etel(id,layer).gt.0.001) then  
                esum = esum + etel(id,layer)

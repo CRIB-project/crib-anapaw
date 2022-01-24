@@ -87,6 +87,11 @@ c         enddo
       etel(2,2) =  val(5,103)
       etel(3,2) =  val(5,104)
 
+      ttel(1,1) =  val(4,101)     ! means tel 1 1rd layer is Emax for the first dssd
+      ttel(1,2) =  val(4,102)
+      ttel(2,2) =  val(4,103)
+      ttel(3,2) =  val(4,104)
+
 c      write(*,*) 'etel(1,1)',etel(1,1)
 c      write(*,*) 'etel(1,2)',etel(1,2)
 
