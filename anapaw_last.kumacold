@@ -1,13 +1,5 @@
-*** Begin of history file: Mon Jan 24 22:58:22 2022
-a/l a
-exe kumac/check
-exe kumac/check
-zone 1 1
-ht 167 cont
-i
-opt logz
-a/l a
-htp cotn
-htp cont
-exit
-*** End   of history file: Mon Jan 24 23:29:55 2022
+*** Begin of history file: Tue Jan 25 00:00:57 2022
+a/l
+ls
+q
+*** End   of history file: Tue Jan 25 00:17:18 2022
