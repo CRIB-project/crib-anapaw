@@ -1,0 +1,8 @@
+opt logy
+zone 2 2
+ht 102; ht 106
+ht 110; ht 114
+wait
+zone 2 2
+ht 118; ht 122
+ 
