@@ -24,7 +24,8 @@ c 1...id, 2...esum
 c 11....1x energy for each layer 
 c 21....2x timing for each layer 
 
-      do id=1,n_tel
+c For Tel1-3 
+      do id=1,3 !n_tel
          naok = naok + 1
          val(1,naok) = id
          esum = 0
@@ -45,6 +46,34 @@ c         write(*,*) "esum=",esum
          val(2,naok) = esum ! total energy
 
       enddo
+
+cc
+c For Tel4-5 (Without dE1 layer)
+      do id=4,n_tel
+         naok = naok + 1
+         val(1,naok) = id
+         esum = 0
+         
+         val(11,naok) = 0. ! energy (MeV)
+         val(21,naok) = ttel(id,1) ! timing (ns) (temporarily dE2 X timing)
+
+         do layer=2,n_layer ! (dE2 Y + E1 + E2)
+c            write(*,*) "id,layer=",id,layer
+c            write(*,*) "etel(id,layer)=",etel(id,layer)
+            val(layer+10,naok) = etel(id,layer) ! energy (MeV)
+            val(layer+20,naok) = ttel(id,layer) ! timing (ns)
+c            if (etel(id,layer).gt.0.050)   ! such code may be needed to supress pedestal
+            if (etel(id,layer).gt.0.001) then  
+               esum = esum + etel(id,layer)
+            endif
+
+         enddo
+
+c         write(*,*) "esum=",esum
+         val(2,naok) = esum ! total energy
+
+      enddo
+
 
 
       return
