@@ -224,14 +224,14 @@ c            write (*,*) 'posid1,2 ', (ID-1)*16+pos1,(ID-1)*16+pos2
 
             if (((ID-1)*16+pos1).eq.nch) then
                val(2,naok) = val(2,id) ! Araw1
-               val(4,naok) = val(12,id) ! Araw1
-               val(3,naok) = val(5,id) ! Traw
+               val(4,naok) = val(12,id) ! Acal1
+               val(3,naok) = val(6,id) ! Traw
                val(5,naok) = val(16,id) ! Tcal
             endif
             if (((ID-1)*16+pos2).eq.nch) then
                val(2,naok) = val(3,id) ! Araw2
-               val(4,naok) = val(13,id) ! Araw2
-               val(3,naok) = val(5,id) ! Traw
+               val(4,naok) = val(13,id) ! Acal2
+               val(3,naok) = val(6,id) ! Traw
                val(5,naok) = val(16,id) ! Tcal
             endif
             

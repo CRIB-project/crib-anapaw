@@ -51,8 +51,8 @@ ADD      = enc_coin.o \
 #	   encdali.o loaddaliprm.o \
 
 ##
-OBJS  =  usersrc.o usersub.o add_ntuple.o util.o
-#OBJS  =  usersrc.o usersub.o add_ntuple.o 
+#OBJS  =  usersrc.o usersub.o add_ntuple.o util.o
+OBJS  =  usersrc.o usersub.o add_ntuple.o 
 # rayfit.o \
 #         readmat.o rec_delta.o rec_beta.o physutil.o
 OBJS += $(ADD)
