@@ -1,0 +1,42 @@
+fetch hbk/run192_threshold.hbk
+
+opt logy
+opt ZFL1
+
+size 64 32;
+zone;
+zone 4 2;
+
+hi/pl 231(0.:5.); hi/pl 232(0.:5.); hi/pl 233(0.:5.); hi/pl 234(0.:5.);
+hi/pl 235(0.:5.); hi/pl 236(0.:5.); hi/pl 237(0.:5.); hi/pl 238(0.:5.);
+pic/pri pic/tel1_de1_thre1.eps
+
+hi/pl 239(0.:5.); hi/pl 240(0.:5.); hi/pl 241(0.:5.); hi/pl 242(0.:5.);
+hi/pl 243(0.:5.); hi/pl 244(0.:5.); hi/pl 245(0.:5.); hi/pl 246(0.:5.);
+pic/pri pic/tel1_de1_thre2.eps
+
+hi/pl 247(0.:5.); hi/pl 248(0.:5.); hi/pl 249(0.:5.); hi/pl 250(0.:5.);
+hi/pl 251(0.:5.); hi/pl 252(0.:5.); hi/pl 253(0.:5.); hi/pl 254(0.:5.);
+pic/pri pic/tel1_de2_thre1.eps
+
+hi/pl 255(0.:5.); hi/pl 256(0.:5.); hi/pl 257(0.:5.); hi/pl 258(0.:5.);
+hi/pl 259(0.:5.); hi/pl 260(0.:5.); hi/pl 261(0.:5.); hi/pl 262(0.:5.);
+pic/pri pic/tel1_de2_thre2.eps
+
+hi/pl 263(0.:5.); hi/pl 264(0.:5.); hi/pl 265(0.:5.); hi/pl 266(0.:5.);
+hi/pl 267(0.:5.); hi/pl 268(0.:5.); hi/pl 269(0.:5.); hi/pl 270(0.:5.);
+pic/pri pic/tel2_de2_thre1.eps
+
+hi/pl 271(0.:5.); hi/pl 272(0.:5.); hi/pl 273(0.:5.); hi/pl 274(0.:5.);
+hi/pl 275(0.:5.); hi/pl 276(0.:5.); hi/pl 279(0.:5.); hi/pl 278(0.:5.);
+pic/pri pic/tel2_de2_thre2.eps
+
+hi/pl 279(0.:5.); hi/pl 280(0.:5.); hi/pl 281(0.:5.); hi/pl 282(0.:5.);
+hi/pl 283(0.:5.); hi/pl 284(0.:5.); hi/pl 285(0.:5.); hi/pl 286(0.:5.);
+pic/pri pic/tel3_de2_thre1.eps
+
+hi/pl 287(0.:5.); hi/pl 288(0.:5.); hi/pl 289(0.:5.); hi/pl 290(0.:5.);
+hi/pl 291(0.:5.); hi/pl 292(0.:5.); hi/pl 293(0.:5.); hi/pl 294(0.:5.);
+pic/pri pic/tel3_de2_thre1.eps
+
+wait;

@@ -1,152 +1,52 @@
-*** Begin of history file: Mon Jan 24 05:39:08 2022
-a/l /home/crib/physics0176.ridf
+*** Begin of history file: Tue Jan 25 13:53:39 2022
+exe kumac/runs
 i
-ht 118 cont
-hn cont
-hnt cont
-opt logz
-ht 110 cont
-hbt cont
-ht 101 cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-xstat
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-xstat
-hn cont
-hn cont
-hn cont
-hn cont
-prx
-xf
 ht
-i
-i
-hn cont
-hn cont
-hn colz
-clear
-era
-a/l
-a/l
-clear
-era
-a/l ridf/physics0175.ridf
-clear
-era
-a/l ridf/physics0176.ridf
-i
-clear
-era
-a/l ridf/physics0176.ridf
-clear
-era
-a/l
-era
-clear
-a/l
-clear
-era
-a/l
-clear
-era
-a/l /home/crib/physics0178.ridf
-i
-ht 101
-hn
-hn
-hn
-hn
-htp cont
-hb cont
-hb cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hb cont
-hb cont
-hn cont
-hn cont
-i
-ht 132 cont
-a/l
-clear
-era
-a/l
-clear
-a/l /home/cribana/physics0180.ridf
-ht 142 cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-htp colz
+ht 154 cont
+lgz
 min 0 0.1
-htp colz
-hn colz
-hn colz
-hn colz
-hn colz
-hn colz
-hn colz
-hn colz
-hn colz
-hn colz
-hn colz
-hn colz
-hn colz
-hn colz
-hn colz
-hn colz
-hn colz
-hn colz
-hn colz
-hn colz
-hn colz
-hn colz
-hn colz
-hn colz
-hn colz
-hn colz
-a/l
-a/l
-*** End   of history file: Mon Jan 24 19:38:02 2022
+ht 154 cont
+hn cont
+hn cont
+hn cont
+hn cont
+hn cont
+hn cont
+hn cont
+hn cont
+hn cont
+hn cont
+hn cont
+hn cont
+hn cont
+hn cont
+hn cont
+xsta
+hb cont
+hb cont
+hn cont
+hn cont
+hn cont
+hn cont
+hn cont
+xsta
+hn cont
+hn cont
+hn cont
+ht 135 cont
+hn cont
+hn cont
+hn cont
+hb cont
+hn cont
+hn cont
+hn cont
+hn cont
+hb cont
+hb cont
+hn cont
+i
+ht 154 cont
+hn cont
+hn cont
+*** End   of history file: Tue Jan 25 15:25:40 2022

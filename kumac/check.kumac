@@ -9,11 +9,12 @@ wait
 zone 2 3
 ht 129 cont; ht 131 cont
 ht 133 cont; ht 135 cont
-ht 179 cont; ht 181 cont
-wait
-ht 137 cont; hnt cont; hnt cont;hnt cont;hnt cont
+ht 177 cont; ht 179 cont
 wait
 zone 2 3
-ht 154 cont; ht 161 cont; ht 167 cont
+ht 137 cont;  ht 138 cont; ht 139 cont;ht 140 cont;ht 141 cont
+wait
+zone 2 3
+ht 154 cont; ht 180 cont; ht 161 cont; ht 167 cont
 ht 171 cont; ht 174 cont 
  

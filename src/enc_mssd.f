@@ -211,7 +211,7 @@ c         write(*,*) 'id =',hitdet(i),' nhit =',nhitdata(id)
          val(1,naok) = i !id
 c get postion 
          nch=i-100
-         id=nch/16+1
+         id=(nch-1)/16+1
          pos1=int(val(14,id))
          pos2=int(val(15,id))
 
