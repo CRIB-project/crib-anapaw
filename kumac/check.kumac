@@ -16,7 +16,7 @@ ht 140 cont;  ht 141 cont; ht 142 cont;ht 143 cont;ht 144 cont
 wait
 zone 2 2
 ht 157 cont; ht 183 cont;
-ht 158 cont; ht 184 cont;
+ht 158 cont; ht 184 cont; 
 wait
 zone 2 3
 ht 165 cont; ht 166 cont
