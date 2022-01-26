@@ -1,0 +1,22 @@
+macro mpos_dump
+  inu = 1
+  hist/plot [1]
+  vlocate vx vy
+  
+  nname = blow $htitle([1])
+  
+  vx1 = vx(1)
+  vx2 = vx(2)
+  
+  if [vx1] > [vx2] then
+  vxtmp = [vx2]
+  vx2 = [vx1]
+  vx1 = [vxtmp]
+  endif
+  
+  xmin = [vx1]
+  xmax = [vx2]
+  
+  hist/fit [1]([xmin]:[xmax]) g
+  vec/del v*
+exitm

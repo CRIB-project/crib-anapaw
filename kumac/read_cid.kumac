@@ -1,0 +1,6 @@
+ macro read_cid
+	 cid
+	 v/del Current_HID
+	 v/cre Current_HID(1) 'I'
+	 v/read Current_HID(1) ./CurrentHID.txt
+ return  Current_HID(1)
