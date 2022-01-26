@@ -1,5 +1,12 @@
 opt logy
 zone 2 2
+ht 101; ht 105
+ht 109; ht 113
+wait
+zone 1 2
+ht 117; ht 121
+wait
+zone 2 2
 ht 102; ht 106
 ht 110; ht 114
 wait
