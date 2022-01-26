@@ -1,43 +1,8 @@
-*** Begin of history file: Wed Jan 26 21:04:12 2022
-a/l ridf/high0219.ridf
-i
-ht 102
-zoo
-ht 102
-zoo
-ht 106
-zoo
-ht 106
-zoo
-ht 110
-zoo
-ht 110
-zoo
-xf
-ht 114
-zoo
-xf
-xf
-i
-ht 118
-xf
-xf
-ht 122
-xf
-xf
-clear
-a/l ridf/high0206.ridf
-i
-ht 102
-xf
-exe kumac/mux_pos_cal.kumac
-clear
-a/l ridf/high0207.ridf
-i
-exe kumac/mux_pos_cal.kumac
-clear
-a/l ridf/high0210.ridf
-i
-exe kumac/mux_pos_cal.kumac
+*** Begin of history file: Wed Jan 26 21:20:24 2022
+a/l
+exe kumac/check.exe
+exe kumac/check.kumac
+exe kumac/check.kumac
+a/l
 exit
-*** End   of history file: Wed Jan 26 21:54:04 2022
+*** End   of history file: Wed Jan 26 22:29:32 2022
