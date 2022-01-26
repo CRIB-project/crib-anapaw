@@ -2,19 +2,24 @@ opt logz
 min 0 0.1
 
 zone 2 3
-ht 114 cont; ht 115 cont
-ht 119 cont; ht 120 cont
+ht 114 cont; ht 115 cont; xstat
+ht 119 cont; ht 120 cont; xstat
 ht 128 cont; ht 101
 wait
 zone 2 3
 ht 129 cont; ht 131 cont
 ht 133 cont; ht 135 cont
-ht 177 cont; ht 179 cont
+ht 137 cont; ht 139 cont
 wait
 zone 2 3
-ht 137 cont;  ht 138 cont; ht 139 cont;ht 140 cont;ht 141 cont
+ht 140 cont;  ht 141 cont; ht 142 cont;ht 143 cont;ht 144 cont
+wait
+zone 2 2
+ht 157 cont; ht 183 cont;
+ht 158 cont; ht 184 cont;
 wait
 zone 2 3
-ht 154 cont; ht 180 cont; ht 161 cont; ht 167 cont
-ht 171 cont; ht 174 cont 
+ht 165 cont; ht 166 cont
+ht 172 cont; ht 173 cont
+ht 177 cont; ht 180 cont 
  

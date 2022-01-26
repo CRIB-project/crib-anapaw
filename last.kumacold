@@ -1,52 +1,52 @@
-*** Begin of history file: Tue Jan 25 13:53:39 2022
-exe kumac/runs
+*** Begin of history file: Wed Jan 26 02:44:09 2022
+a/l
+exe kumac/check
 i
-ht
-ht 154 cont
-lgz
-min 0 0.1
-ht 154 cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-xsta
-hb cont
-hb cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-xsta
-hn cont
-hn cont
-hn cont
-ht 135 cont
-hn cont
-hn cont
-hn cont
-hb cont
-hn cont
-hn cont
-hn cont
-hn cont
-hb cont
-hb cont
-hn cont
+ht 123
+zone
+ht 123 cont
+xstat
 i
-ht 154 cont
+i
+ht 109
+ht 109 cont
+hb cont
+hb cont
+hb cont
+hb cont
+ht 105 colz
+ht 105 cont
+xstat
+size 32 16
+zone 2 1
+ht 105 cont
+xstat
+i
+ht 109 cont
+xstat
+clear
+era
+a/l /home/crib/high0209.ridf
+zone
+size 40 40
+ht 123 cont
+ht 105 cont
+size 32 32
+zone
+ht 105 cont
+size 20 20
+zone
+ht 105 cont
 hn cont
 hn cont
-*** End   of history file: Tue Jan 25 15:25:40 2022
+xstat
+hn cont
+hn cont
+hn cont
+hn cont
+xstat
+hb cont
+hb cont
+hb cont
+hb cont
+*** End   of history file: Wed Jan 26 03:02:02 2022
