@@ -1,9 +1,10 @@
 macro mpos_dump
   inu = 1
-  hist/plot [1]
+  hid = $exec(kumac/read_cid)
+  hist/plot [hid]
   vlocate vx vy
   
-  nname = blow $htitle([1])
+  nname = blow $htitle([hid])
   
   vx1 = vx(1)
   vx2 = vx(2)
@@ -17,6 +18,7 @@ macro mpos_dump
   xmin = [vx1]
   xmax = [vx2]
   
-  hist/fit [1]([xmin]:[xmax]) g
-  vec/del v*
-exitm
+  hist/fit [hid]([xmin]:[xmax]) g
+  vec/del vx*
+  vec/del vy*
+return
