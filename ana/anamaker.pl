@@ -158,11 +158,11 @@ foreach $id (1..$#ppacnames) {
  print OUT "    
 c $name[$id]
 hst1
-0, 2,$id,$id,5, 2000,0,8000, '$name[$id] X1raw'
-0, 2,$id,$id,6, 2000,0,8000, '$name[$id] X2raw'
-0, 2,$id,$id,7, 2000,0,8000, '$name[$id] Y1raw'
-0, 2,$id,$id,8, 2000,0,8000, '$name[$id] Y2raw'
-0, 2,$id,$id,2, 2000,0,8000, '$name[$id] Traw'
+0, 2,$id,$id,5, 2000,0,11000, '$name[$id] X1raw'
+0, 2,$id,$id,6, 2000,0,11000, '$name[$id] X2raw'
+0, 2,$id,$id,7, 2000,0,11000, '$name[$id] Y1raw'
+0, 2,$id,$id,8, 2000,0,11000, '$name[$id] Y2raw'
+0, 2,$id,$id,2, 2000,0,11000, '$name[$id] Traw'
 
 0, 2,$id,$id,22, 500,-50.,50., '$name[$id] X(ns)'
 0, 2,$id,$id,23, 500,-50.,50., '$name[$id] Y(ns)'
@@ -171,8 +171,8 @@ hst1
 
 hst2
 0, 2,$id,$id,24,  2,$id,$id,25, 120,-60.,60., 120,-60.,60., '$name[$id] Y vs X (mm)'
-0, 2,$id,$id,5,  2,$id,$id,6, 200,0.,4000., 200,0.,4000., '$name[$id] X2 vs X1raw'
-0, 2,$id,$id,7,  2,$id,$id,8, 200,0.,4000., 200,0.,4000., '$name[$id] Y2 vs Y1raw'
+0, 2,$id,$id,5,  2,$id,$id,6, 200,0.,11000., 200,0.,11000., '$name[$id] X2 vs X1raw'
+0, 2,$id,$id,7,  2,$id,$id,8, 200,0.,11000., 200,0.,11000., '$name[$id] Y2 vs Y1raw'
 
 ";    
 }
@@ -221,7 +221,13 @@ foreach $id (1..$telmax) {
 
 }
 
+foreach $ch (1..16) {
+    print OUT "0, 4,$ch,$ch,2, 7,1,1,2, 200,0,4000, 200,0,40, 'Esum1 vs Tel1 dE1X E$ch raw'\n"
+}
 
+foreach $ch (1..16) {
+    print OUT "0, 4,$ch,$ch,4, 7,1,1,2, 200,0,10, 200,0,40, 'Esum1 vs Tel1 dE1X E$ch cal'\n"
+}
 
 }
 

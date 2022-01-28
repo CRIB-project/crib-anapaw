@@ -1,0 +1,25 @@
+opt logz
+min 0 0.1
+
+zone 2 3
+ht 138 cont; ht 139 cont; xstat
+ht 143 cont; ht 144 cont; xstat
+ht 152 cont; ht 125
+wait
+zone 2 3
+ht 153 cont; ht 155 cont
+ht 157 cont; ht 159 cont
+ht 161 cont; ht 163 cont
+wait
+zone 2 3
+ht 164 cont;  ht 165 cont; ht 166 cont;ht 167 cont;ht 168 cont
+wait
+zone 2 2
+ht 181 cont; ht 207 cont;
+ht 182 cont; ht 208 cont; 
+wait
+zone 2 3
+ht 189 cont; ht 190 cont
+ht 196 cont; ht 197 cont
+ht 201 cont; ht 204 cont 
+ 

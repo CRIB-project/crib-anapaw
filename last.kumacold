@@ -1,52 +1,127 @@
-*** Begin of history file: Tue Jan 25 13:53:39 2022
-exe kumac/runs
+*** Begin of history file: Thu Jan 27 15:25:50 2022
+a/l ridf/high0225.ridf
+a/l ridf/high0226.ridf
+a/l ridf/high0227.ridf
+a/l ridf/high0228.ridf
+a/l ridf/high0229.ridf
+a/l ridf/high0230.ridf
+a/l ridf/high0231.ridf
+a/l ridf/high0224.ridf
+a/l ridf/high0223.ridf
 i
-ht
-ht 154 cont
-lgz
-min 0 0.1
-ht 154 cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-xsta
-hb cont
-hb cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-xsta
-hn cont
-hn cont
-hn cont
-ht 135 cont
-hn cont
-hn cont
-hn cont
-hb cont
-hn cont
-hn cont
-hn cont
-hn cont
-hb cont
-hb cont
-hn cont
+ht 101
+exe kumac/check.kumac
 i
-ht 154 cont
+ht 101
+zone
+hn
+hn
+hn
+hn
+hn
+hn
+hn
+hn
+hn
+hn
+hn
+hn
+hn
+hn
+hn
+hn
+hn
+hn
+hn
+hn
+hn
+hn
+hn
+hn
+hn
+hn
+hn
+hn
+hn
+hb
+ht 129 cont
+opt logz
+ht 129 cont
+opt linz
+ht 129 cont
+opt logz
+ht 129 cont
 hn cont
 hn cont
-*** End   of history file: Tue Jan 25 15:25:40 2022
+hn cont
+hn cont
+hn cont
+hn cont
+hn colz
+hb colz
+hb colz
+hb colz
+hb colz
+hn colz
+hn colz
+hn colz
+hn colz
+hn colz
+hn colz
+hn colz
+hn colz
+hn colz
+hn colz
+hn colz
+hn colz
+hn colz
+hn colz
+hn colz
+hn colz
+hn colz
+hb colz
+hn colz
+hn colz
+hn colz
+hn colz
+hn colz
+hn colz
+hn colz
+hn colz
+hn colz
+hn colz
+hb colz
+hb colz
+ht 156 colz
+hn colz
+hn
+hn colz
+hn colz
+hn colz
+hn colz
+hn colz
+hn colz
+hn colz
+hn colz
+hn colz
+hn colz
+hn colz
+hn colz
+hn colz
+hn colz
+hn colz
+hn colz
+hn colz
+hn colz
+hn colz
+hn colz
+i
+i
+hn colz
+hn colz
+hn colz
+hn colz
+hn colz
+hn colz
+hn colz
+*** End   of history file: Thu Jan 27 17:05:14 2022
