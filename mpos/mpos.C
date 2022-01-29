@@ -37,7 +37,6 @@ void mpos(const Int_t np=0, TString run=" ")
   ofstream fout(output.Data());
   fout << setprecision(8); // good for column output data
 
-  TCanvas *c1 = new TCanvas("c1", "c1");
   TH1D *h[6];
   //must be changed
   Int_t ch_start[6] = {300, 650, 850, 1250, 1400, 1600};
@@ -49,6 +48,7 @@ void mpos(const Int_t np=0, TString run=" ")
     h[i] = new TH1D(tmp.Data(), ";ch;entries", ch_interval[i], ch_start[i], ch_stop[i]);
     h[i]->GetXaxis()->SetRange(ch_start[i], ch_stop[i]);
     h[i]->GetXaxis()->SetRangeUser(ch_start[i], ch_stop[i]);
+    h[i]->SetLineColor(9);
   }
 
   Int_t nfound;
@@ -71,6 +71,7 @@ void mpos(const Int_t np=0, TString run=" ")
     }
   }
 
+
   fout << "please copy below parameters (it can rewrite the mssd.prm)" << endl;
   fout << "=================================================================" << endl;
 
@@ -81,7 +82,7 @@ void mpos(const Int_t np=0, TString run=" ")
     cout << endl;
     Double_t xpeaks[np];
     TSpectrum *s = new TSpectrum(np);
-    nfound = s->Search(h[i], 1, "", 0.10);
+    nfound = s->Search(h[i], 2, "", 0.10);
     cout << "Found " << nfound << " candidate peaks to fit" << endl;
     Double_t *xpeaksfound = s->GetPositionX();
     for(Int_t j=0; j<nfound; j++){
@@ -99,7 +100,6 @@ void mpos(const Int_t np=0, TString run=" ")
     }
     if (nfound < np){
       cout << "COULD NOT FIND " << np << " peaks as user input requests!" << endl;
-      cout << "\tAnyway continue to search the peaks" << endl;
     }
   }
 
@@ -125,7 +125,15 @@ void mpos(const Int_t np=0, TString run=" ")
     }
   }
 
-  fin->Close();
+  TCanvas *c1 = new TCanvas("c1", "c1");
+  c1->Divide(2, 3);
+  for(Int_t i=0; i<6; i++){
+    c1->cd(i+1);
+    h[i]->Draw();
+  }
+  //c1->Print("./check.jpg");
+
+  //fin->Close();
   fout.close();
 
 }
