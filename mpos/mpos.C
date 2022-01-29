@@ -15,6 +15,7 @@ void mpos(const Int_t np=0, TString run=" ")
     Usage();
     return;
   }
+  gStyle->SetOptLogy(1);
 
   cout << endl;
   cout << "your input :" << endl;
@@ -71,10 +72,6 @@ void mpos(const Int_t np=0, TString run=" ")
     }
   }
 
-
-  fout << "please copy below parameters (it can rewrite the mssd.prm)" << endl;
-  fout << "=================================================================" << endl;
-
   Double_t high_ch[6] = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
   Double_t low_ch[6] = {10000.0, 10000.0, 10000.0, 10000.0, 10000.0, 10000.0};
 
@@ -100,8 +97,17 @@ void mpos(const Int_t np=0, TString run=" ")
     }
     if (nfound < np){
       cout << "COULD NOT FIND " << np << " peaks as user input requests!" << endl;
+      if(i<5){
+        fout << "WARNING:: COULD NOT FIND 16 peaks" << endl;
+      }
+      if(i==5 && nfound < np - 1){
+        fout << "WARNING:: COULD NOT FIND 15 peaks" << endl;
+      }
     }
   }
+
+  fout << "please copy below parameters (it can rewrite the mssd.prm)" << endl;
+  fout << "=================================================================" << endl;
 
 
   fout << "c lowest peaks" << endl;

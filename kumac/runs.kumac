@@ -1,4 +1,8 @@
-book ana/run.ana
-a/l ridf/physics0188.ridf b
-a/l ridf/physics0189.ridf b
-a/l ridf/physics0192.ridf b
+* book ana/run.ana
+book ana/check_t-e.ana
+* a/l ridf/physics0188.ridf b
+* a/l ridf/physics0189.ridf b
+* a/l ridf/physics0192.ridf b
+a/l ridf/physics0241.ridf b
+a/l ridf/physics0242.ridf b
+a/l ridf/physics0243.ridf b
