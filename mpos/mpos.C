@@ -79,7 +79,7 @@ void mpos(const Int_t np=0, TString run=" ")
     cout << endl;
     Double_t xpeaks[np];
     TSpectrum *s = new TSpectrum(np);
-    nfound = s->Search(h[i], 2, "", 0.10);
+    nfound = s->Search(h[i], 2, "", 0.01);
     cout << "Found " << nfound << " candidate peaks to fit" << endl;
     Double_t *xpeaksfound = s->GetPositionX();
     for(Int_t j=0; j<nfound; j++){

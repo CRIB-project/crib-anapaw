@@ -1,3 +1,29 @@
+c Energy loss from LISE++ for Tel1
+c for 24 MeV
+c   p:dE1 0.083MeV, dE2 1.286MeV a:dE1 0.989MeV, dE2 23.011
+c for 21 MeV
+c   p:dE1 0.092MeV, dE2 1.446MeV a:dE1 1.1MeV, dE2 19.9
+c for 20 MeV
+c   p:dE1 0.096MeV, dE2 1.51MeV a:dE1 1.139MeV, dE2 18.861
+c for 19 MeV
+c   p:dE1 0.1MeV, dE2 1.581MeV a:dE1 1.169MeV, dE2 17.811
+c for 16 MeV
+c   p:dE1 0.116MeV, dE2 1.844MeV a:dE1 1.355MeV, dE2 14.645
+c for 14 MeV
+c   p:dE1 0.128MeV, dE2 2.083MeV a:dE1 1.506MeV, dE2 12.494
+c for 12 MeV
+c   p:dE1 0.145MeV, dE2 2.412MeV a:dE1 1.706MeV, dE2 10.294
+c for 10 MeV
+c   p:dE1 0.168MeV, dE2 2.892MeV a:dE1 1.98MeV, dE2 8.02
+c for 6 MeV
+c   p:dE1 0.247MeV, dE2 5.753MeV a:dE1 3.139MeV, dE2 2.861
+c for 4.5 MeV
+c   p:dE1 0.308MeV, dE2 4.192MeV a:dE1 4.461MeV, dE2 0.039
+c for 3 MeV
+c   p:dE1 0.423MeV, dE2 2.577MeV a:dE1 3.0MeV, dE2 0
+c for 1 MeV
+c   p:dE1 1.01MeV, dE2 0MeV a:dE1 1.0MeV, dE2 0
+c
 analys
 1
 2
@@ -6,22 +32,18 @@ analys
 5
 6
 7
+c
 hst2
-c0, 4,1,1,2, 4,1,1,3, 1000,0,4000, 1000,0,10000, 'Tel1 dE1X E1raw vs T1raw'
-c0, 4,2,2,2, 4,2,2,3, 1000,0,4000, 1000,0,10000, 'Tel1 dE1X E2raw vs T2raw'
-c0, 4,3,3,2, 4,3,3,3, 1000,0,4000, 1000,0,10000, 'Tel1 dE1X E3raw vs T3raw'
-c0, 4,4,4,2, 4,4,4,3, 1000,0,4000, 1000,0,10000, 'Tel1 dE1X E4raw vs T4raw'
-c0, 4,5,5,2, 4,5,5,3, 1000,0,4000, 1000,0,10000, 'Tel1 dE1X E5raw vs T5raw'
-c0, 4,6,6,2, 4,6,6,3, 1000,0,4000, 1000,0,10000, 'Tel1 dE1X E6raw vs T6raw'
-c0, 4,7,7,2, 4,7,7,3, 1000,0,4000, 1000,0,10000, 'Tel1 dE1X E7raw vs T7raw'
-c0, 4,8,8,2, 4,8,8,3, 1000,0,4000, 1000,0,10000, 'Tel1 dE1X E8raw vs T8raw'
-c0, 4,9,9,2, 4,9,9,3, 1000,0,4000, 1000,0,10000, 'Tel1 dE1X E9raw vs T9raw'
-c0, 4,10,10,2, 4,10,10,3, 1000,0,4000, 1000,0,10000, 'Tel1 dE1X E10raw vs T10raw'
-c0, 4,11,11,2, 4,11,11,3, 1000,0,4000, 1000,0,10000, 'Tel1 dE1X E11raw vs T11raw'
-c0, 4,12,12,2, 4,12,12,3, 1000,0,4000, 1000,0,10000, 'Tel1 dE1X E12raw vs T12raw'
-c0, 4,13,13,2, 4,13,13,3, 1000,0,4000, 1000,0,10000, 'Tel1 dE1X E13raw vs T13raw'
-0, 4,14,14,2, 4,14,14,3, 1000,0,4000, 1000,0,10000, 'Tel1 dE1X E14raw vs T14raw'
-0, 4,15,15,2, 4,15,15,3, 1000,0,4000, 1000,0,10000, 'Tel1 dE1X E15raw vs T15raw'
-0, 4,16,16,2, 4,16,16,3, 1000,0,4000, 1000,0,10000, 'Tel1 dE1X E16raw vs T16raw'
+0, 7,1,1,11, 7,1,1,2, 200,0,60, 200,0,140, 'tel 1 Esum vs dE1'
+0, 7,1,1,11, 7,1,1,2, 200,0,15, 200,0,80, 'tel 1 Esum vs dE1(zoom)'
+0, 7,1,1,11, 7,1,1,2, 200,0,4, 200,0,18, 'tel 1 Esum vs dE1(zoom2)'
+0, 7,1,1,12, 7,1,1,2, 200,0,80, 200,0,140, 'tel 1 Esum vs dE2'
+0, 7,1,1,12, 7,1,1,2, 200,0,30, 200,0,40, 'tel 1 Esum vs dE2(zoom)'
+0, 7,1,1,12, 7,1,1,2, 200,0,18, 200,0,18, 'tel 1 Esum vs dE2(zoom2)'
+0, 7,1,1,11, 7,1,1,12, 200,0,80, 200,0,80, 'tel 1 dE2 vs dE1'
+0, 7,1,1,11, 7,1,1,12, 200,0,60, 200,0,20, 'tel 1 dE2 vs dE1(zoom)'
+0, 7,1,1,11, 7,1,1,12, 200,0,4, 200,0,18, 'tel 1 dE2 vs dE1(zoom2)'
 
 exit
+
+

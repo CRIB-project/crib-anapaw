@@ -1,0 +1,11 @@
+WARNING:: COULD NOT FIND 16 peaks
+WARNING:: COULD NOT FIND 15 peaks
+please copy below parameters (it can rewrite the mssd.prm)
+=================================================================
+c lowest peaks
+c high0209
+389.5, 389.5, 709.5, 709.5, 874.5, 874.5, 1303.5, 1303.5, 1435.5, 1435.5, 1648.5, 1648.5
+
+c highest peaks
+c high0209
+658.5, 658.5, 995.5, 995.5, 1108.5, 1108.5, 1512.5, 1512.5, 1684.5, 1684.5, 1648.5, 1648.5

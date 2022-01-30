@@ -1,3 +1,99 @@
-*** Begin of history file: Sat Jan 29 14:26:27 2022
+*** Begin of history file: Sun Jan 30 21:05:47 2022
+a/l
+a/l ridf/high0270.ridf
+a/l ridf/high0270.ridf
+clear
+era
+a/l
+clear f
+era
+a/l
+era
+clear f
+era
+a/l
+clear
+era
+a/l
+clear f
+era
+a/l
+clear f
+era
+a/l
+clear
+era
+a/l
+clear f
+era
+a/l
+clear f
+ear
+era
+a/l
+clear f
+era
+start
+a/l
+clear f
+era
+start
+a/l
+clear f
+era
+a/l
+clear f
+era
+a/l
+clera f
+clear f
+era
+a/l
+clear f
+era
+a/l ridf/calib0273.ridf
+ht 127 cont
+opt logz
+xstat
+i
+ht 105 cont
+ht 105 colz
+ht 130 colz
+ht 131 colz
+clear f
+ear
+era
+a/l
+clear f
+era
+a/l
+clear f
+era
+a/l
+clear f
+era
+a/l
+clear f
+era
+a/l
+clear
+ear
+era
+a/l
+a/l
+clear f
+era
+a/l
+clear f
+era
+a/l ridf/calib0275.ridf
+ht 128 cont
+min 0 0.1
+ht 128 cont
+xstat
+clear f
+ear
+era
+a/l
 q
-*** End   of history file: Sat Jan 29 14:26:30 2022
+*** End   of history file: Mon Jan 31 01:20:10 2022

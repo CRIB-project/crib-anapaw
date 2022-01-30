@@ -1,27 +1,27 @@
-*** Begin of history file: Sat Jan 29 12:51:38 2022
-a/l ridf/bg0255.ridf
-lgz;min 0 0.1
-ht 124cont
-htp cont
-hn cont
-i
-ht 130 cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-hn cont
-*** End   of history file: Sat Jan 29 12:58:06 2022
+*** Begin of history file: Sun Jan 30 21:05:47 2022
+a/l
+a/l ridf/high0270.ridf
+a/l ridf/high0270.ridf
+clear
+era
+a/l
+clear f
+era
+a/l
+era
+clear f
+era
+a/l
+clear
+era
+a/l
+clear f
+era
+a/l
+clear f
+era
+a/l
+clear
+era
+a/l
+*** End   of history file: Sun Jan 30 23:33:32 2022
